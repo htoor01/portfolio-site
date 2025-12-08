@@ -43,9 +43,9 @@ export default function HomePage(){
                     </div>
                 </section>
                 
-                <section id="skillset" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-8 max-w-5xl w-full">
+                <section id="skillset" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 sm:p-6 mb-8 max-w-5xl w-full">
 
-                    <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">A basic rundown of the languages, frameworks, libraries and tools I've worked with!</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white">A basic rundown of the languages, frameworks, libraries and tools I've worked with!</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
