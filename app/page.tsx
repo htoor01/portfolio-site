@@ -3,19 +3,19 @@ import ProjectCardFeatured from "@/components/ProjectCard/ProjectCardFeatured";
 
 export default function HomePage(){
     return(
-        <main className="flex flex-col items-center p-8">
-                <section id="stats-box" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-8 max-w-2xl w-full">
-                    <div className="flex items-center gap-6">
-                        <img src="/images/profile.png" alt="Haaris Toor" className="w-32 h-32 rounded-full object-cover" />
+        <main className="flex flex-col items-center p-4 sm:p-8">
+                <section id="stats-box" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 sm:p-6 mb-8 max-w-2xl w-full">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                        <img src="/images/profile.png" alt="Haaris Toor" className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover" />
                         <div className="flex-1 text-center">
-                            <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
-                            <div className="flex gap-4 justify-center mb-4">
+                            <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-4">
                                 <a 
                                     href="/resume.pdf" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     title="As of 2025!"
-                                    className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                                    className="bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
                                 >
                                     Resume!
                                 </a>
@@ -24,17 +24,17 @@ export default function HomePage(){
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     title="Everywhere I've ever worked, ever!"
-                                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                                    className="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
                                 >
                                     Complete Work History!
                                 </a>
                             </div>
-                            <div className="flex gap-4 justify-center">
-                                <Link href="https://linkedin.com/in/haaristoor" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                                <Link href="https://linkedin.com/in/haaristoor" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
                                     <img src="/images/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
                                     LinkedIn
                                 </Link>
-                                <Link href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
+                                <Link href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
                                     <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
                                     GitHub
                                 </Link>

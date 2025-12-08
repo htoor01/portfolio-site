@@ -11,7 +11,7 @@ export default function FooterGeneral(){
                             <img src="/images/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
                             LinkedIn
                         </Link>
-                        <Link href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
+                        <Link href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
                             <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
                             GitHub
                         </Link>
