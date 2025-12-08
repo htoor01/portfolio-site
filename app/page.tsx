@@ -9,7 +9,7 @@ export default function HomePage(){
                         <img src="/images/profile.png" alt="Haaris Toor" className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover" />
                         <div className="flex-1 text-center">
                             <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
-                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-4">
                                 <a 
                                     href="/resume.pdf" 
                                     target="_blank" 
@@ -28,6 +28,16 @@ export default function HomePage(){
                                 >
                                     Complete Work History!
                                 </a>
+                            </div>
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                                <Link href="https://linkedin.com/in/haaristoor" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
+                                    <img src="/images/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
+                                    LinkedIn
+                                </Link>
+                                <Link href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
+                                    <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
+                                    GitHub
+                                </Link>
                             </div>
                         </div>
                     </div>

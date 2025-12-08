@@ -14,7 +14,7 @@ export default function AboutPage() {
                         <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">Hi there, I'm Haaris. 👋</h2>
                         <p className="text-gray-700 dark:text-gray-300 mb-4">
                             I'm a Full-Stack Developer and Student at Rutgers University studying Computer Science (Major) and Economics (Minor). 
-                            I have experience with Javascript, Typescript, Python, Java, SQL, MongoDB, Git, Github Actions (CI/CD), Docker, and AWS. 
+                            I have experience with Javascript, Typescript, Python, Java, SQL, MongoDB, Git, GitHub Actions (CI/CD), Docker, and AWS. 
                             Frameworks and libraries include Express.js, Next.js, Node.js, React, Spring Boot, NumPy, Pandas, PyGame.
                         </p>
                     </div>
