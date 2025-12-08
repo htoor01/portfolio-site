@@ -4,7 +4,10 @@ import "./globals.css";
 
 export const metadata = {
     title: "Haaris Toor's Portfolio",
-    description: "Haaris Toor's' Software Developer Portfolio Website"
+    description: "Haaris Toor's' Software Developer Portfolio Website",
+    icons: {
+        icon: "/images/profile.png",
+    }
 };
 
 export default function RootLayout({
