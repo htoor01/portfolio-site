@@ -1,8 +1,9 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function BlogPage() {
+function BlogContent() {
     const searchParams = useSearchParams();
     const category = searchParams.get("category");
 
@@ -71,5 +72,13 @@ export default function BlogPage() {
                 </div>
             </div>
         </main>
+    );
+}
+
+export default function BlogPage() {
+    return (
+        <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading...</div>}>
+            <BlogContent />
+        </Suspense>
     );
 }

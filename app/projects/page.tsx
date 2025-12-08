@@ -12,6 +12,7 @@ interface GitHubRepo {
     forks_count: number;
     html_url: string;
     topics: string[];
+    private?: boolean;
 }
 
 export default function ProjectsPage() {
