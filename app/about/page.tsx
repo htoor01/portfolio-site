@@ -20,15 +20,6 @@ export default function AboutPage() {
                     </div>
                 </div>
 
-                <div className="mb-6">
-                    <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Education & Experience</h3>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3">
-                        I'm currently a junior at Rutgers University. I've worked on various projects ranging from personal portfolio sites to complex 
-                        web applications. Check out my projects page to see some of my recent work, or 
-                        download my resume for a complete overview of my experience.
-                    </p>
-                </div>
-
                 <div>
                     <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Let's Connect!</h3>
                     <p className="text-gray-700 dark:text-gray-300">
