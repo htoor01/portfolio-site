@@ -3,46 +3,78 @@ import ProjectCardFeatured from "@/components/ProjectCard/ProjectCardFeatured";
 
 export default function HomePage(){
     return(
-        <main>
-                <section id="stats-box">
-                    <h1>Hi, I'm Haaris Toor! 👋</h1>
-                    <p>Resume! (most recent)</p>
-                    <p>Complete Work Experience (everywhere I've ever worked, ever)</p>
+        <main className="flex flex-col items-center p-8">
+                <section id="stats-box" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-8 max-w-2xl w-full">
+                    <div className="flex items-center gap-6">
+                        <img src="/images/profile.png" alt="Haaris Toor" className="w-32 h-32 rounded-full object-cover" />
+                        <div className="flex-1 text-center">
+                            <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
+                            <div className="flex gap-4 justify-center">
+                                <a 
+                                    href="/resume.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    title="As of 2025!"
+                                    className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                                >
+                                    Resume!
+                                </a>
+                                <a 
+                                    href="/complete-work-history.pdf" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    title="Everywhere I've ever worked, ever!"
+                                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                                >
+                                    Complete Work History!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 
-                <section id="skillset">
+                <section id="skillset" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-8 max-w-5xl w-full">
 
-                    <h2>A basic rundown of the languages, frameworks, libraries and tools I've worked with!</h2>
+                    <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">A basic rundown of the languages, frameworks, libraries and tools I've worked with!</h2>
 
-                    <ul id="languages">
-                        <li>HTML/CSS</li>
-                        <li>Javascript</li>
-                        <li>Typescript</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                    </ul>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Languages</h3>
+                            <ul id="languages" className="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                                <li>Typescript</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
 
-                    <ul id="frameworks">
-                        <li>Node.js</li>
-                        <li>Next.js</li>
-                        <li>Express.js</li>
-                        <li>React</li>
-                        <li>Spring Boot</li>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                        <li>PyGame</li>
-                        
-                    </ul>
+                        <div>
+                            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Frameworks/Libraries</h3>
+                            <ul id="frameworks" className="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>Node.js</li>
+                                <li>Next.js</li>
+                                <li>Express.js</li>
+                                <li>React</li>
+                                <li>Spring Boot</li>
+                                <li>NumPy</li>
+                                <li>Pandas</li>
+                                <li>PyGame</li>
+                            </ul>
+                        </div>
 
-                    <ul id="tools">
-                        <li>Git</li>
-                        <li>Docker</li>
-                        <li>AWS</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-
-                    </ul>
+                        <div>
+                            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Tools</h3>
+                            <ul id="tools" className="list-disc list-inside text-gray-700 dark:text-gray-300">
+                                <li>Git</li>
+                                <li>Docker</li>
+                                <li>AWS</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </section>
 
@@ -57,9 +89,6 @@ export default function HomePage(){
                         githubLink="https://github.com/htoor01/portfolio-site"
                         imageUrl="/images/portfolio-website.png"
                         />
-                    </div>
-
-                    <div className="flex flex-wrap gap-6">
                         <ProjectCardFeatured 
                         title="Budget Tracker"
                         description="A very basic HTML, CSS, and JavaScript budgeting application!"
