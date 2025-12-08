@@ -1,0 +1,55 @@
+File Structure:
+
+portfolio-site/
+|
+├── app/ <-- using app-routing to test latest nextjs features
+|       ├── favicon.ico
+|       ├── globals.css <-- covers entire site (navbar, footer) 
+|       ├── layout.tsx <-- general layout
+|       ├── page.tsx <-- landing (home) page
+|       ├── about/
+|               ├── page.tsx <-- about page
+|       ├── projects/
+|               ├── page.tsx <-- projects page 
+|       ├── blog/
+|               ├── posts/
+|                       ├── drafts/
+|                               ├── basic.md <-- placeholder
+|                       ├── published/
+|               ├── home.tsx <-- blog page 
+|       ├── contact/
+|               ├── page.tsx <-- contact page 
+|       ├── error.tsx 
+|       ├── loading.tsx
+|
+├── components/ <-- globally shared, reusable UI components
+|       ├── NavBar/
+|               ├── NavBarGeneral.tsx 
+|               ├── NavBarBlog.tsx <-- on blog page
+|       ├── Footer/
+|               ├── FooterGeneral.tsx 
+|               ├── FooterBlog.tsx <-- on blog page
+|       ├── ProjectCard/
+|               ├── ProjectCardFeatured.tsx <-- on home page 
+|               ├── ProjectCardGeneral.tsx <-- on projects page 
+|
+├── public/ <-- static files such as imgs, standard practice
+|      ├── images/
+|               ├── future.img
+|      ├── file.svg
+|      ├── globe.svg
+|      ├── next.svg
+|      ├── vercel.svg
+|      ├── windows.svg
+|
+├── node_modules/ <-- not listing out all nodes, but they're here
+|
+├── .gitignore
+├── design.txt <-- the .txt file this is written in
+├── eslint.config.mjs
+├── next-env.d.ts 
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── README.md <-- not for project, but for how to make react, nextjs app
+├── tsconfig.json
