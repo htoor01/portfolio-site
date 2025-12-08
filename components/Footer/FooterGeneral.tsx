@@ -12,8 +12,8 @@ export default function FooterGeneral(){
                             LinkedIn
                         </Link>
                         <Link href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
-                            <img src="/images/github.png" alt="Github" className="w-5 h-5" />
-                            Github
+                            <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
+                            GitHub
                         </Link>
                         <Link href="https://twitter.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-blue-500 hover:text-blue-600 transition-colors">
                             <img src="/images/twitter.png" alt="Twitter" className="w-5 h-5" />
