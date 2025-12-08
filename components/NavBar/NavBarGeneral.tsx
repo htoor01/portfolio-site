@@ -6,7 +6,7 @@ export default function NavBarGeneral(){
             <header>
 
                 <nav>
-                    <ul id="nav-bar" className="flex gap-6 p-4 justify-center">
+                    <ul id="nav-bar" className="flex flex-wrap gap-3 sm:gap-6 p-3 sm:p-4 justify-center text-sm sm:text-base">
                         <li><Link href="/" className="hover:text-blue-500 transition-colors">Home</Link></li>
                         <li><Link href="/projects" className="hover:text-blue-500 transition-colors">Projects</Link></li>
                         <li><Link href="/blog" className="hover:text-blue-500 transition-colors">Blog</Link></li>

@@ -3,19 +3,19 @@ import ProjectCardFeatured from "@/components/ProjectCard/ProjectCardFeatured";
 
 export default function HomePage(){
     return(
-        <main className="flex flex-col items-center p-8">
-                <section id="stats-box" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-8 max-w-2xl w-full">
-                    <div className="flex items-center gap-6">
-                        <img src="/images/profile.png" alt="Haaris Toor" className="w-32 h-32 rounded-full object-cover" />
+        <main className="flex flex-col items-center p-4 sm:p-8">
+                <section id="stats-box" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 sm:p-6 mb-8 max-w-2xl w-full">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                        <img src="/images/profile.png" alt="Haaris Toor" className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover" />
                         <div className="flex-1 text-center">
-                            <h1 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
-                            <div className="flex gap-4 justify-center">
+                            <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                                 <a 
                                     href="/resume.pdf" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     title="As of 2025!"
-                                    className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                                    className="bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
                                 >
                                     Resume!
                                 </a>
@@ -24,7 +24,7 @@ export default function HomePage(){
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     title="Everywhere I've ever worked, ever!"
-                                    className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+                                    className="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
                                 >
                                     Complete Work History!
                                 </a>
@@ -33,9 +33,9 @@ export default function HomePage(){
                     </div>
                 </section>
                 
-                <section id="skillset" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6 mb-8 max-w-5xl w-full">
+                <section id="skillset" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 sm:p-6 mb-8 max-w-5xl w-full">
 
-                    <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">A basic rundown of the languages, frameworks, libraries and tools I've worked with!</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-900 dark:text-white">A basic rundown of the languages, frameworks, libraries and tools I've worked with!</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div>
