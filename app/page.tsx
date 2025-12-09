@@ -5,11 +5,13 @@ export default function HomePage(){
     return(
         <main className="flex flex-col items-center p-4 sm:p-8">
                 <section id="stats-box" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 sm:p-6 mb-8 max-w-2xl w-full">
-                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5">
                         <img src="/images/profile.png" alt="Haaris Toor" className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover" />
                         <div className="flex-1 text-center">
-                            <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
-                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-4">
+                            <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
+                            <p className="text-lg sm:text-xl font-semibold text-gray-700 dark:text-gray-300 mb-1">Full Stack Developer</p>
+                            <p className="text-md sm:text-lg text-gray-600 dark:text-gray-400 mb-4">New Jersey, USA</p>
+                            <div className="flex justify-center mb-4">
                                 <a 
                                     href="/resume.pdf" 
                                     target="_blank" 
@@ -18,15 +20,6 @@ export default function HomePage(){
                                     className="bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
                                 >
                                     Resume!
-                                </a>
-                                <a 
-                                    href="/complete-work-history.pdf" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    title="Everywhere I've ever worked, ever!"
-                                    className="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
-                                >
-                                    Complete Work History!
                                 </a>
                             </div>
                             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
