@@ -5,13 +5,13 @@ export default function HomePage(){
     return(
         <main className="flex flex-col items-center p-4 sm:p-8">
                 <section id="stats-box" className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-4 sm:p-6 mb-8 max-w-2xl w-full">
-                    <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5">
+                    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
                         <img src="/images/profile.png" alt="Haaris Toor" className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover" />
                         <div className="flex-1 text-center">
                             <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-gray-900 dark:text-white">Hi, I'm Haaris Toor! 👋</h1>
-                            <p className="text-lg sm:text-xl font-semibold text-gray-700 dark:text-gray-300 mb-1">Full Stack Developer</p>
-                            <p className="text-md sm:text-lg text-gray-600 dark:text-gray-400 mb-4">New Jersey, USA</p>
-                            <div className="flex justify-center mb-4">
+                            <p className="text-lg font-medium text-gray-900 dark:text-white mb-1">Full Stack Developer</p>
+                            <p className="text-lg font-medium text-gray-500 dark:text-gray-400 mb-4">New Jersey, USA</p>
+                            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-4">
                                 <a 
                                     href="/resume.pdf" 
                                     target="_blank" 
@@ -49,6 +49,7 @@ export default function HomePage(){
                                 <li>Typescript</li>
                                 <li>Python</li>
                                 <li>Java</li>
+                                <li>C++</li>
                                 <li>SQL</li>
                             </ul>
                         </div>
@@ -60,7 +61,6 @@ export default function HomePage(){
                                 <li>Next.js</li>
                                 <li>Express.js</li>
                                 <li>React</li>
-                                <li>Spring Boot</li>
                                 <li>NumPy</li>
                                 <li>Pandas</li>
                                 <li>PyGame</li>
@@ -73,6 +73,7 @@ export default function HomePage(){
                                 <li>Git</li>
                                 <li>Docker</li>
                                 <li>AWS</li>
+                                <li>Vercel</li>
                                 <li>MySQL</li>
                                 <li>MongoDB</li>
                             </ul>
