@@ -33,11 +33,14 @@ const PROJECTS = [
     title: 'This Portfolio',
     description:
       "The project you're viewing right now! A dark-mode developer portfolio built with Next.js 16 App Router, Framer Motion animations, Tailwind CSS v4, and deployed on Vercel.",
+    challenge:
+      'Designing a site that feels technical and personal without being over-engineered. Scroll-triggered animations, a responsive terminal card, and a light/dark theme toggle all had to feel natural.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
     period: '05/2026',
     github: 'https://github.com/htoor01',
-    featured: false,
-    highlight: 'This site · Framer Motion · Tailwind v4',
+    featured: true,
+    highlight: 'This site · Framer Motion · Tailwind v4 · Light/Dark mode',
+    isPortfolio: true,
   },
 ]
 
@@ -122,15 +125,24 @@ export default function Projects() {
                         Devpost
                       </a>
                     )}
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-muted-foreground hover:text-foreground hover:border-cyan/40 transition-colors"
-                    >
-                      <Github size={12} />
-                      GitHub
-                    </a>
+                    {'isPortfolio' in project && project.isPortfolio ? (
+                      <button
+                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-muted-foreground hover:text-foreground hover:border-cyan/40 transition-colors"
+                      >
+                        To Top
+                      </button>
+                    ) : (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-muted-foreground hover:text-foreground hover:border-cyan/40 transition-colors"
+                      >
+                        <Github size={12} />
+                        GitHub
+                      </a>
+                    )}
                   </div>
                 </div>
 
@@ -171,7 +183,7 @@ export default function Projects() {
         </div>
 
         {/* Other projects */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {PROJECTS.some((p) => !p.featured) && <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {PROJECTS.filter((p) => !p.featured).map((project, i) => (
             <FadeIn key={project.title} delay={0.1 + i * 0.08}>
               <motion.div
@@ -218,7 +230,7 @@ export default function Projects() {
               </motion.div>
             </FadeIn>
           ))}
-        </div>
+        </div>}
 
         {/* GitHub CTA */}
         <FadeIn delay={0.3} className="mt-12 text-center">

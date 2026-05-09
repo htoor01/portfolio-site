@@ -79,14 +79,11 @@ export default function About() {
                   applied AI.
                 </p>
                 <p>
-                  As a <span className="text-foreground font-medium">Founding Engineer at Lotari</span>,
-                  I architected license-based auth systems, stateless middleware, and migrated
-                  production workloads to AWS serverless, cutting provisioning time by 90%.
-                </p>
-                <p>
-                  As an <span className="text-foreground font-medium">AI Fellow at Handshake AI</span>,
-                  I evaluate multimodal AI systems at scale, build image datasets for computer
-                  vision models, and contribute to responsible AI deployment pipelines.
+                  One of the things I&apos;m most proud of is my work as a{' '}
+                  <span className="text-foreground font-medium">Founding Engineer at Lotari</span>{' '}
+                  where I built a production auth system from the ground up, designed the
+                  serverless infrastructure on AWS, and shipped real features that made an
+                  immediate impact on a growing B2B product.
                 </p>
                 <p>
                   I build for{' '}
@@ -96,12 +93,19 @@ export default function About() {
                   . I care deeply about clean abstractions, minimal dependencies, and systems that
                   hold up under pressure.
                 </p>
+                <p>
+                  Outside of engineering, I enjoy reading about{' '}
+                  <span className="text-foreground font-medium">history</span>, hiking, following
+                  markets and{' '}
+                  <span className="text-foreground font-medium">investing</span>, playing
+                  basketball, and casual multiplayer games with friends.
+                </p>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.3} className="mt-8">
               <div className="flex flex-wrap gap-2">
-                {['Rutgers University', 'CS + Economics', 'May 2027'].map((tag) => (
+                {['Rutgers University', 'CS + Economics'].map((tag) => (
                   <span
                     key={tag}
                     className="px-3 py-1 rounded-full border border-border text-xs font-mono text-muted-foreground"

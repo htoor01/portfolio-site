@@ -57,6 +57,52 @@
   --radius-xl: calc(var(--radius) + 8px);
 }
 
+.light {
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.12 0 0);
+  --card: oklch(0.94 0 0);
+  --card-foreground: oklch(0.12 0 0);
+  --popover: oklch(0.94 0 0);
+  --popover-foreground: oklch(0.12 0 0);
+  --primary: oklch(0.52 0.18 200);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.90 0 0);
+  --secondary-foreground: oklch(0.12 0 0);
+  --muted: oklch(0.90 0 0);
+  --muted-foreground: oklch(0.46 0 0);
+  --accent: oklch(0.52 0.18 200);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.55 0.22 27);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.84 0 0);
+  --input: oklch(0.90 0 0);
+  --ring: oklch(0.52 0.18 200);
+  --cyan: oklch(0.42 0.18 200);
+  --cyan-dim: oklch(0.52 0.18 200 / 0.12);
+  --cyan-glow: oklch(0.52 0.18 200 / 0.3);
+}
+
+.light .glass {
+  background: oklch(0.97 0 0 / 0.80);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid oklch(0.84 0 0);
+}
+
+.light .grid-bg {
+  background-image:
+    linear-gradient(oklch(0.52 0.18 200 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(0.52 0.18 200 / 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.light ::-webkit-scrollbar-track {
+  background: oklch(0.95 0 0);
+}
+.light ::-webkit-scrollbar-thumb {
+  background: oklch(0.75 0 0);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

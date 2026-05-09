@@ -18,19 +18,6 @@ const EXPERIENCES = [
     stack: ['TypeScript', 'Express.js', 'FastAPI', 'JWT', 'AWS Lambda', 'DynamoDB', 'CDK', 'Bedrock'],
   },
   {
-    role: 'AI Fellow',
-    company: 'Handshake AI',
-    period: '12/2025 – Present',
-    location: 'Remote',
-    type: 'Fellowship',
-    bullets: [
-      'Design and execute real-world, image-based prompt evaluations for multimodal AI systems, systematically identifying model accuracy gaps and usability issues.',
-      'Operate within a structured evaluation pipeline under strict quality, time, and confidentiality constraints, delivering production-ready outputs aligned with evolving model standards.',
-      'Contribute to large-scale, high-quality image dataset development to enhance computer vision model performance and support responsible AI deployment.',
-    ],
-    stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
-  },
-  {
     role: 'Teaching Assistant',
     company: 'Quakerbridge Learning Center',
     period: '05/2026 – Aug 2026',
@@ -42,6 +29,19 @@ const EXPERIENCES = [
       'Designing curriculum materials and practice problems that bridge foundational theory with practical programming skills.',
     ],
     stack: ['Java', 'OOP', 'Data Structures', 'Algorithms', 'AP CS A'],
+  },
+  {
+    role: 'AI Fellow',
+    company: 'Handshake AI',
+    period: '12/2025 – Present',
+    location: 'Remote',
+    type: 'Fellowship',
+    bullets: [
+      'Design and execute real-world, image-based prompt evaluations for multimodal AI systems, systematically identifying model accuracy gaps and usability issues.',
+      'Operate within a structured evaluation pipeline under strict quality, time, and confidentiality constraints, delivering production-ready outputs aligned with evolving model standards.',
+      'Contribute to large-scale, high-quality image dataset development to enhance computer vision model performance and support responsible AI deployment.',
+    ],
+    stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
   },
 ]
 
