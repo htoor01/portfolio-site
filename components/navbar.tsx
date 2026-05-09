@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Github, Linkedin, Menu, X } from 'lucide-react'
+import { Github, Linkedin, Menu, X, Sun, Moon } from 'lucide-react'
 
 const navLinks = [
   { label: 'To Top', href: '#top' },
@@ -15,12 +15,22 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [isLight, setIsLight] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    const html = document.documentElement
+    if (isLight) {
+      html.classList.add('light')
+    } else {
+      html.classList.remove('light')
+    }
+  }, [isLight])
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false)
@@ -65,6 +75,13 @@ export default function Navbar() {
 
           {/* Icons */}
           <div className="hidden md:flex items-center gap-4">
+            <button
+              onClick={() => setIsLight((v) => !v)}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Toggle light mode"
+            >
+              {isLight ? <Moon size={18} /> : <Sun size={18} />}
+            </button>
             <a
               href="https://github.com/htoor01"
               target="_blank"
@@ -135,6 +152,13 @@ export default function Navbar() {
                 >
                   <Linkedin size={18} />
                 </a>
+                <button
+                  onClick={() => setIsLight((v) => !v)}
+                  className="text-muted-foreground hover:text-foreground transition-colors ml-auto"
+                  aria-label="Toggle light mode"
+                >
+                  {isLight ? <Moon size={18} /> : <Sun size={18} />}
+                </button>
               </div>
             </div>
           </motion.div>

@@ -13,6 +13,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/haaris-toor.jpg',
+    apple: '/haaris-toor.jpg',
+  },
   title: 'Haaris Toor — Backend & Systems Engineer',
   description:
     'Portfolio of Haaris Toor — backend engineer focused on distributed systems, AI infrastructure, cloud architecture, and developer tooling.',
