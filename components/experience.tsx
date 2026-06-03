@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, Youtube } from 'lucide-react'
 
 const EXPERIENCES = [
   {
@@ -29,6 +29,12 @@ const EXPERIENCES = [
       'Designing curriculum materials and practice problems that bridge foundational theory with practical programming skills.',
     ],
     stack: ['Java', 'OOP', 'Data Structures', 'Algorithms', 'AP CS A'],
+    links: [
+      {
+        label: 'YouTube Lectures',
+        href: 'https://youtube.com/playlist?list=PLgCHRLIJOoVP-1b6pCCB1T3BPJgvVKglc&si=W5ZZiiYg2XSJhXRZ',
+      },
+    ],
   },
   {
     role: 'AI Fellow',
@@ -132,6 +138,22 @@ export default function Experience() {
                         </span>
                       ))}
                     </div>
+                    {'links' in exp && exp.links && exp.links.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        {exp.links.map((link) => (
+                          <a
+                            key={link.href}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-muted-foreground hover:text-foreground hover:border-cyan/40 transition-colors"
+                          >
+                            <Youtube size={12} />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               </FadeIn>

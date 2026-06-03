@@ -80,25 +80,16 @@ export default function About() {
                 </p>
                 <p>
                   One of the things I&apos;m most proud of is my work as a{' '}
-                  <span className="text-foreground font-medium">Founding Engineer at Lotari</span>{' '}
-                  where I built a production auth system from the ground up, designed the
-                  serverless infrastructure on AWS, and shipped real features that made an
-                  immediate impact on a growing B2B product.
+                  <span className="text-foreground font-medium">Founding Engineer at Lotari</span>,
+                  where I built a production auth system from the ground up, shipped real features
+                  on a live B2B product, and care deeply about clean abstractions, minimal
+                  dependencies, and systems built for performance and horizontal scale.
                 </p>
                 <p>
-                  I build for{' '}
-                  <span className="text-foreground font-medium">
-                    performance, reliability, and horizontal scale
-                  </span>
-                  . I care deeply about clean abstractions, minimal dependencies, and systems that
-                  hold up under pressure.
-                </p>
-                <p>
-                  Outside of engineering, I enjoy reading about{' '}
-                  <span className="text-foreground font-medium">history</span>, hiking, following
-                  markets and{' '}
-                  <span className="text-foreground font-medium">investing</span>, playing
-                  basketball, and casual multiplayer games with friends.
+                  Outside of{' '}
+                  <span className="text-foreground font-medium">engineering</span>, I enjoy reading
+                  about history, hiking, following markets and investing, playing basketball, and
+                  casual multiplayer games with friends.
                 </p>
               </div>
             </FadeIn>
