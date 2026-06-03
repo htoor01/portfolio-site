@@ -51,14 +51,28 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 z-50 glass border-b border-border"
       >
         <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* Logo */}
-          <a
-            href="#"
-            className="font-mono text-sm font-medium text-foreground hover:text-cyan transition-colors"
-            onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-          >
-            <span className="text-cyan">~/</span>haaris
-          </a>
+          {/* Logo + theme toggle */}
+          <div className="flex items-center gap-3">
+            <a
+              href="#"
+              className="font-mono text-sm font-medium text-foreground hover:text-cyan transition-colors"
+              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+            >
+              <span className="text-cyan">~/</span>haaris
+            </a>
+            <button
+              onClick={() => setIsLight((v) => !v)}
+              className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-mono transition-colors ${
+                isLight
+                  ? 'border-cyan/60 text-cyan bg-cyan/10 hover:bg-cyan/20'
+                  : 'border-border text-muted-foreground hover:border-cyan/40 hover:text-foreground'
+              }`}
+              aria-label="Toggle light mode"
+            >
+              {isLight ? <Moon size={12} /> : <Sun size={12} />}
+              {isLight ? 'dark' : 'light'}
+            </button>
+          </div>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
@@ -75,13 +89,6 @@ export default function Navbar() {
 
           {/* Icons */}
           <div className="hidden md:flex items-center gap-4">
-            <button
-              onClick={() => setIsLight((v) => !v)}
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Toggle light mode"
-            >
-              {isLight ? <Moon size={18} /> : <Sun size={18} />}
-            </button>
             <a
               href="https://github.com/htoor01"
               target="_blank"
@@ -154,10 +161,15 @@ export default function Navbar() {
                 </a>
                 <button
                   onClick={() => setIsLight((v) => !v)}
-                  className="text-muted-foreground hover:text-foreground transition-colors ml-auto"
+                  className={`ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-mono transition-colors ${
+                    isLight
+                      ? 'border-cyan/60 text-cyan bg-cyan/10 hover:bg-cyan/20'
+                      : 'border-border text-muted-foreground hover:border-cyan/40 hover:text-foreground'
+                  }`}
                   aria-label="Toggle light mode"
                 >
-                  {isLight ? <Moon size={18} /> : <Sun size={18} />}
+                  {isLight ? <Moon size={12} /> : <Sun size={12} />}
+                  {isLight ? 'dark' : 'light'}
                 </button>
               </div>
             </div>

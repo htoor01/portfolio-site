@@ -33,12 +33,10 @@ const PROJECTS = [
     title: 'This Portfolio',
     description:
       "The project you're viewing right now! A dark-mode developer portfolio built with Next.js 16 App Router, Framer Motion animations, Tailwind CSS v4, and deployed on Vercel.",
-    challenge:
-      'Designing a site that feels technical and personal without being over-engineered. Scroll-triggered animations, a responsive terminal card, and a light/dark theme toggle all had to feel natural.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
     period: '05/2026',
     github: 'https://github.com/htoor01',
-    featured: true,
+    featured: false,
     highlight: 'This site · Framer Motion · Tailwind v4 · Light/Dark mode',
     isPortfolio: true,
   },
