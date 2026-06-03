@@ -37,6 +37,18 @@ const EXPERIENCES = [
     ],
   },
   {
+    role: 'Laboratory Technician',
+    company: 'SGS EHS',
+    period: '10/2025 – 06/2026',
+    location: 'Dayton, NJ',
+    type: 'Lab',
+    bullets: [
+      'Prepared sample batches for chemical analysis through preservation, spiking, reagent addition, digestion, and filtration following strict protocol.',
+      'Documented laboratory processes and results using Microsoft Excel scripts alongside specialized LIMS (Laboratory Information Management Systems) and Clinisys software.',
+    ],
+    stack: ['LIMS', 'Clinisys', 'Microsoft Excel', 'Chemical Analysis', 'Lab Documentation'],
+  },
+  {
     role: 'AI Fellow',
     company: 'Handshake AI',
     period: '12/2025 – Present',
