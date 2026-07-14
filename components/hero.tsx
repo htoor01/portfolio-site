@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden grid-bg pt-16"
+      className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden grid-bg pt-28"
     >
       {/* Subtle radial glow */}
       <div
@@ -38,7 +38,7 @@ export default function Hero() {
                 <span className="text-muted-foreground">$ </span>
                 <span className="text-cyan">whoami</span>
               </div>
-              <div className="border-t border-border pt-3 text-muted-foreground leading-relaxed">
+              <div className="border-t border-border pt-3 text-foreground leading-relaxed">
                 Site currently down so QLC students can focus.
               </div>
             </div>
