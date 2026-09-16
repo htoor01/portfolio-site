@@ -11,11 +11,12 @@ const EXPERIENCES = [
     location: 'Remote',
     type: 'Startup',
     bullets: [
-      'Built a license-based authentication and authorization system using JWT, TypeScript, Express.js, and FastAPI, reducing account provisioning time by 90% and improving firm-level onboarding for B2B SaaS customers.',
-      'Implemented stateless authorization middleware in Express.js with custom license validation logic, eliminating third-party auth dependencies and enabling horizontal scalability.',
-      'Migrated backend to AWS serverless architecture via Lambda, API Gateway, and DynamoDB using CDK with Bedrock-assisted code conversion, enabling scalable production deployment and reducing infrastructure complexity.',
+      'Built and maintained backend services for 3 legal-tech products using Python and REST APIs, implementing application logic and integrations to support customer-facing workflows and demos to major clients.',
+      'Automated software testing and deployment with GitHub Actions and AWS, establishing repeatable build and deployment workflows that reduced manual steps required to ship backend or product changes.',
+      'Built and owned a product end-to-end from PRD to AWS deployment, implementing the frontend, backend workflows, authentication, and AI-powered document processing to automate legal matter intake.',
+      'Reduced monthly infrastructure costs by 10% by identifying and decommissioning an underutilized AWS service, eliminating unnecessary cloud resources while maintaining product-suite functionality.',
     ],
-    stack: ['TypeScript', 'Express.js', 'FastAPI', 'JWT', 'AWS Lambda', 'DynamoDB', 'CDK', 'Bedrock'],
+    stack: ['Python', 'REST APIs', 'GitHub Actions', 'AWS', 'Authentication', 'AI Document Processing'],
   },
   {
     role: 'Teaching Assistant',
@@ -96,7 +97,7 @@ export default function Experience() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-16 text-balance">
-            Where I&apos;ve built.
+            Things I&apos;ve done.
           </h2>
         </FadeIn>
 
@@ -118,7 +119,18 @@ export default function Experience() {
                           {exp.role}
                         </h3>
                         <div className="flex items-center gap-2 mt-1">
-                          <span className="text-cyan text-sm font-medium">{exp.company}</span>
+                          {exp.company === 'Lotari' ? (
+                            <a
+                              href="https://www.lotari.ai"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-cyan text-sm font-medium hover:underline"
+                            >
+                              {exp.company}
+                            </a>
+                          ) : (
+                            <span className="text-cyan text-sm font-medium">{exp.company}</span>
+                          )}
                           <span className="text-muted-foreground text-xs">·</span>
                           <span className="text-muted-foreground text-xs">{exp.location}</span>
                         </div>
