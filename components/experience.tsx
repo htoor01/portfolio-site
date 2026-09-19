@@ -217,23 +217,27 @@ export default function Experience() {
                 ))}
               </div>
             </div>
-            <div className="flex flex-wrap gap-1.5">
-              {[
-                'Data Structures & Algorithms',
-                'Systems Programming',
-                'Computer Architecture',
-                'Discrete Mathematics',
-                'Linear Algebra',
-                'Economic Data Analytics',
-              ].map((c) => (
-                <span
-                  key={c}
-                  className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground"
-                >
-                  {c}
+              <div className="flex flex-wrap gap-1.5 max-w-sm">
+                <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
+                  Activities
                 </span>
-              ))}
-            </div>
+                {[
+                  { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
+                  { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
+                  { label: 'RUMAD', href: 'https://rumad.rutgers.edu/' },
+                  { label: 'USACS', href: 'https://usacs.org/' },
+                ].map((club) => (
+                  <a
+                    key={club.label}
+                    href={club.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors"
+                  >
+                    {club.label}
+                  </a>
+                ))}
+              </div>
           </div>
         </FadeIn>
       </div>
