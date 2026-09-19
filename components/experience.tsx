@@ -10,12 +10,7 @@ const EXPERIENCES = [
     period: '11/2025 – Present',
     location: 'Remote',
     type: 'Startup',
-    bullets: [
-      'Built and maintained backend services for 3 legal-tech products using Python and REST APIs, implementing application logic and integrations to support customer-facing workflows and demos to major clients.',
-      'Automated software testing and deployment with GitHub Actions and AWS, establishing repeatable build and deployment workflows that reduced manual steps required to ship backend or product changes.',
-      'Built and owned a product end-to-end from PRD to AWS deployment, implementing the frontend, backend workflows, authentication, and AI-powered document processing to automate legal matter intake.',
-      'Reduced monthly infrastructure costs by 10% by identifying and decommissioning an underutilized AWS service, eliminating unnecessary cloud resources while maintaining product-suite functionality.',
-    ],
+    description: 'Built and maintained backend services for three legal-tech products using Python and REST APIs, automated testing and deployment with GitHub Actions and AWS, owned a product end-to-end from PRD to deployment, and reduced monthly infrastructure costs by 10%.',
     stack: ['Python', 'REST APIs', 'GitHub Actions', 'AWS', 'Authentication', 'AI Document Processing'],
     links: [
       { label: 'Lotari', href: 'https://www.lotari.ai' },
@@ -27,9 +22,7 @@ const EXPERIENCES = [
     period: '05/2026 – Aug 2026',
     location: 'Mercerville, NJ',
     type: 'Education',
-    bullets: [
-      'Taught core Java, Object-Oriented Programming (OOP), and basic Data Structures and Algorithms (DSA) to a summer cohort of 45+ students, leading to a 90%+ pass rate on the WWP Computer Programming district exam.',
-    ],
+    description: 'Taught core Java, Object-Oriented Programming (OOP), and basic Data Structures and Algorithms (DSA) to a summer cohort of 45+ students, leading to a 90%+ pass rate on the WWP Computer Programming district exam.',
     stack: ['Java', 'OOP', 'Data Structures', 'Algorithms', 'AP CS A'],
     links: [
       {
@@ -44,10 +37,7 @@ const EXPERIENCES = [
     period: '12/2025 – Present',
     location: 'Remote',
     type: 'Fellowship',
-    bullets: [
-      'Contributed to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement.',
-      'Worked within strict quality, time, and confidentiality requirements to deliver consistent evaluations aligned with evolving model standards.',
-    ],
+    description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
     stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
   },
   {
@@ -56,10 +46,7 @@ const EXPERIENCES = [
     period: '10/2025 – 06/2026',
     location: 'Dayton, NJ',
     type: 'Lab',
-    bullets: [
-      'Prepared sample batches for chemical analysis through preservation, spiking, reagent addition, digestion, and filtration, following strict laboratory protocols.',
-      'Documented sample preparation and processing using Microsoft Excel scripts, LIMS (Laboratory Information Management Systems), and Clinisys software.',
-    ],
+    description: 'Prepared sample batches for chemical analysis through preservation, spiking, reagent addition, digestion, and filtration, then documented sample preparation using Microsoft Excel scripts, LIMS (Laboratory Information Management Systems), and Clinisys software.',
     stack: ['LIMS', 'Clinisys', 'Microsoft Excel', 'Chemical Analysis', 'Lab Documentation'],
   },
 ]
@@ -119,18 +106,7 @@ export default function Experience() {
                           {exp.role}
                         </h3>
                         <div className="flex items-center gap-2 mt-1">
-                          {exp.company === 'Lotari' ? (
-                            <a
-                              href="https://www.lotari.ai"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-cyan text-sm font-medium hover:underline"
-                            >
-                              {exp.company}
-                            </a>
-                          ) : (
-                            <span className="text-cyan text-sm font-medium">{exp.company}</span>
-                          )}
+                          <span className="text-cyan text-sm font-medium">{exp.company}</span>
                           <span className="text-muted-foreground text-xs">·</span>
                           <span className="text-muted-foreground text-xs">{exp.location}</span>
                         </div>
@@ -151,7 +127,7 @@ export default function Experience() {
                             href={link.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-muted-foreground hover:text-foreground hover:border-cyan/40 transition-colors"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-foreground hover:text-cyan hover:border-cyan/40 transition-colors"
                           >
                             <ExternalLink size={12} />
                             {link.label}
@@ -160,14 +136,9 @@ export default function Experience() {
                       </div>
                     )}
 
-                    <ul className="space-y-2 mb-5">
-                      {exp.bullets.map((b, j) => (
-                        <li key={j} className="text-sm text-muted-foreground leading-relaxed flex gap-3">
-                          <span className="text-cyan mt-1 flex-shrink-0">›</span>
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                      {exp.description}
+                    </p>
 
                     <div className="flex flex-wrap gap-1.5">
                       {exp.stack.map((s) => (
@@ -198,28 +169,11 @@ export default function Experience() {
               <p className="text-sm text-muted-foreground mt-0.5">
                 Bachelor&apos;s in Computer Science · Minor in Economics · May 2027
               </p>
-              <div className="flex flex-wrap gap-2 mt-3">
-                {[
-                  { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
-                  { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
-                  { label: 'RUMAD', href: 'https://rumad.rutgers.edu/' },
-                  { label: 'USACS', href: 'https://usacs.org/' },
-                ].map((club) => (
-                  <a
-                    key={club.label}
-                    href={club.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs font-mono text-muted-foreground hover:text-cyan transition-colors"
-                  >
-                    {club.label}
-                  </a>
-                ))}
-              </div>
+
             </div>
               <div className="flex flex-wrap gap-1.5 max-w-sm">
                 <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
-                  Activities
+                  Activities / Talks
                 </span>
                 {[
                   { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
