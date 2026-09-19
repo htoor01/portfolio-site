@@ -5,16 +5,28 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const PROJECTS = [
   {
-    title: 'Policy Checker',
+    title: 'AutoTA',
     description:
-      'Municipal budget analysis platform that automates data collection from 3+ government portals, models fiscal policy impacts across 10+ spending categories, and generates structured analytical reports with multi-chart visualization pipelines.',
+      'Deterministic automated grader that ingests 200+ Google Classroom submissions through the REST API, runs JUnit tests, and generates initial grades while detecting missing assignments.',
     challenge:
-      'Handling inconsistent government data formats and building a multi-category fiscal modeling engine that auto-balances policy proposals.',
-    stack: ['Python', 'Matplotlib', 'Plotly', 'Web Scraping', 'pandas', 'Markdown'],
-    period: '01/2026 – Present',
-    github: 'https://github.com/htoor01',
+      'Containerizing JUnit execution and building CI checks that keep grading safe, repeatable, and reliable across every commit.',
+    stack: ['Python', 'Google Classroom API', 'JUnit', 'Docker', 'GitHub Actions', 'Codex'],
+    period: '2026',
+    github: 'https://github.com/htoor01/AutoTA',
     featured: true,
-    highlight: 'Reduces manual data entry · 4+ chart types · 10+ spending categories',
+    highlight: '200+ submissions · Dockerized tests · Automated CI/CD',
+  },
+  {
+    title: 'JobMatch',
+    description:
+      'Job ingestion and matching system that aggregates postings from 5+ job boards, stores raw data in S3 and normalized records in PostgreSQL, then ranks roles by career alignment.',
+    challenge:
+      'Making job search repeatable by combining resilient ingestion, normalized storage, weighted NumPy ranking, and reliable test coverage for new sources.',
+    stack: ['Python', 'Public APIs', 'AWS S3', 'PostgreSQL', 'NumPy', 'pytest'],
+    period: '2026',
+    github: 'https://github.com/htoor01/JobMatch',
+    featured: true,
+    highlight: '5+ job boards · 10+ daily matches · Weighted ranking',
   },
   {
     title: 'DermAI',

@@ -58,58 +58,19 @@ export default function About() {
         {/* Section label */}
         <FadeIn>
           <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
-            01 / About
+            01 / Skills
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Bio */}
-          <div>
-            <FadeIn delay={0.1}>
-              <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 text-balance">
-                Building systems that scale.
-              </h2>
-            </FadeIn>
-            <FadeIn delay={0.2}>
-              <div className="space-y-4 text-muted-foreground leading-relaxed text-base">
-                <p>
-                  I&apos;m a Computer Science student at{' '}
-                  <span className="text-foreground font-medium">Rutgers University</span>, with a
-                  minor in Economics. I&apos;m focused on backend systems, cloud infrastructure, and
-                  applied AI.
-                </p>
-                <p>
-                  One of the things I&apos;m most proud of is my work as a{' '}
-                  <span className="text-foreground font-medium">Founding Engineer at Lotari</span>,
-                  where I built a production auth system from the ground up, shipped real features
-                  on a live B2B product, and care deeply about clean abstractions, minimal
-                  dependencies, and systems built for performance and horizontal scale.
-                </p>
-                <p>
-                  Outside of{' '}
-                  <span className="text-foreground font-medium">engineering</span>, I enjoy reading
-                  about history, hiking, following markets and investing, playing basketball, and
-                  casual multiplayer games with friends.
-                </p>
-              </div>
-            </FadeIn>
-
-            <FadeIn delay={0.3} className="mt-8">
-              <div className="flex flex-wrap gap-2">
-                {['Rutgers University', 'CS + Economics'].map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1 rounded-full border border-border text-xs font-mono text-muted-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </FadeIn>
-          </div>
+        <div>
+          <FadeIn delay={0.1}>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-10 text-balance">
+              Skills and tools I use.
+            </h2>
+          </FadeIn>
 
           {/* Skills grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {SKILL_GROUPS.map((group, i) => (
               <FadeIn key={group.label} delay={0.1 + i * 0.08}>
                 <div className="p-4 rounded-lg border border-border bg-card hover:border-cyan/30 transition-colors group">
