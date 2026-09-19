@@ -3,7 +3,18 @@
 import { motion } from 'framer-motion'
 import { ExternalLink } from 'lucide-react'
 
-const EXPERIENCES = [
+type Experience = {
+  role: string
+  company: string
+  period: string
+  location: string
+  type: string
+  description: string
+  stack: string[]
+  links: { label: string; href: string }[]
+}
+
+const EXPERIENCES: Experience[] = [
   {
     role: 'Founding Engineer',
     company: 'Lotari',
@@ -39,6 +50,7 @@ const EXPERIENCES = [
     type: 'Fellowship',
     description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
     stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
+    links: [],
   },
   {
     role: 'Laboratory Technician',
@@ -48,6 +60,7 @@ const EXPERIENCES = [
     type: 'Lab',
     description: 'Prepared sample batches for chemical analysis through preservation, spiking, reagent addition, digestion, and filtration, then documented sample preparation using Microsoft Excel scripts, LIMS (Laboratory Information Management Systems), and Clinisys software.',
     stack: ['LIMS', 'Clinisys', 'Microsoft Excel', 'Chemical Analysis', 'Lab Documentation'],
+    links: [],
   },
 ]
 
@@ -119,7 +132,7 @@ export default function Experience() {
                       </div>
                     </div>
 
-                    {'links' in exp && exp.links && exp.links.length > 0 && (
+                    {exp.links.length > 0 && (
                       <div className="flex flex-wrap gap-2 mb-4">
                         {exp.links.map((link) => (
                           <a
