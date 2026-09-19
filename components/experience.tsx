@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink, Youtube } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 
 const EXPERIENCES = [
   {
@@ -17,6 +17,9 @@ const EXPERIENCES = [
       'Reduced monthly infrastructure costs by 10% by identifying and decommissioning an underutilized AWS service, eliminating unnecessary cloud resources while maintaining product-suite functionality.',
     ],
     stack: ['Python', 'REST APIs', 'GitHub Actions', 'AWS', 'Authentication', 'AI Document Processing'],
+    links: [
+      { label: 'Lotari', href: 'https://www.lotari.ai' },
+    ],
   },
   {
     role: 'Teaching Assistant',
@@ -25,9 +28,7 @@ const EXPERIENCES = [
     location: 'Mercerville, NJ',
     type: 'Education',
     bullets: [
-      'Teaching 50+ students Java, object-oriented programming, and data structures & algorithms fundamentals in a structured classroom setting.',
-      'Preparing students for the AP Computer Science A "Option 2" exam, reinforcing core concepts through hands-on exercises and targeted review sessions.',
-      'Designing curriculum materials and practice problems that bridge foundational theory with practical programming skills.',
+      'Taught core Java, Object-Oriented Programming (OOP), and basic Data Structures and Algorithms (DSA) to a summer cohort of 45+ students, leading to a 90%+ pass rate on the WWP Computer Programming district exam.',
     ],
     stack: ['Java', 'OOP', 'Data Structures', 'Algorithms', 'AP CS A'],
     links: [
@@ -44,9 +45,8 @@ const EXPERIENCES = [
     location: 'Remote',
     type: 'Fellowship',
     bullets: [
-      'Design and execute real-world, image-based prompt evaluations for multimodal AI systems, systematically identifying model accuracy gaps and usability issues.',
-      'Operate within a structured evaluation pipeline under strict quality, time, and confidentiality constraints, delivering production-ready outputs aligned with evolving model standards.',
-      'Contribute to large-scale, high-quality image dataset development to enhance computer vision model performance and support responsible AI deployment.',
+      'Contributed to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement.',
+      'Worked within strict quality, time, and confidentiality requirements to deliver consistent evaluations aligned with evolving model standards.',
     ],
     stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
   },
@@ -57,8 +57,8 @@ const EXPERIENCES = [
     location: 'Dayton, NJ',
     type: 'Lab',
     bullets: [
-      'Prepared sample batches for chemical analysis through preservation, spiking, reagent addition, digestion, and filtration following strict protocol.',
-      'Documented laboratory processes and results using Microsoft Excel scripts alongside specialized LIMS (Laboratory Information Management Systems) and Clinisys software.',
+      'Prepared sample batches for chemical analysis through preservation, spiking, reagent addition, digestion, and filtration, following strict laboratory protocols.',
+      'Documented sample preparation and processing using Microsoft Excel scripts, LIMS (Laboratory Information Management Systems), and Clinisys software.',
     ],
     stack: ['LIMS', 'Clinisys', 'Microsoft Excel', 'Chemical Analysis', 'Lab Documentation'],
   },
@@ -143,6 +143,23 @@ export default function Experience() {
                       </div>
                     </div>
 
+                    {'links' in exp && exp.links && exp.links.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {exp.links.map((link) => (
+                          <a
+                            key={link.href}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-muted-foreground hover:text-foreground hover:border-cyan/40 transition-colors"
+                          >
+                            <ExternalLink size={12} />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+
                     <ul className="space-y-2 mb-5">
                       {exp.bullets.map((b, j) => (
                         <li key={j} className="text-sm text-muted-foreground leading-relaxed flex gap-3">
@@ -162,22 +179,7 @@ export default function Experience() {
                         </span>
                       ))}
                     </div>
-                    {'links' in exp && exp.links && exp.links.length > 0 && (
-                      <div className="flex flex-wrap gap-2 mt-3">
-                        {exp.links.map((link) => (
-                          <a
-                            key={link.href}
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-muted-foreground hover:text-foreground hover:border-cyan/40 transition-colors"
-                          >
-                            <Youtube size={12} />
-                            {link.label}
-                          </a>
-                        ))}
-                      </div>
-                    )}
+
                   </div>
                 </div>
               </FadeIn>
@@ -196,6 +198,24 @@ export default function Experience() {
               <p className="text-sm text-muted-foreground mt-0.5">
                 Bachelor&apos;s in Computer Science · Minor in Economics · May 2027
               </p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {[
+                  { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
+                  { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
+                  { label: 'RUMAD', href: 'https://rumad.rutgers.edu/' },
+                  { label: 'USACS', href: 'https://usacs.org/' },
+                ].map((club) => (
+                  <a
+                    key={club.label}
+                    href={club.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-mono text-muted-foreground hover:text-cyan transition-colors"
+                  >
+                    {club.label}
+                  </a>
+                ))}
+              </div>
             </div>
             <div className="flex flex-wrap gap-1.5">
               {[

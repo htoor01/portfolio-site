@@ -53,7 +53,7 @@ function FadeIn({
 
 export default function About() {
   return (
-    <section id="about" className="py-28 px-6 sm:px-12 lg:px-24">
+    <section id="skills" className="py-28 px-6 sm:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto">
         {/* Section label */}
         <FadeIn>
@@ -65,7 +65,7 @@ export default function About() {
         <div>
           <FadeIn delay={0.1}>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-10 text-balance">
-              Skills and tools I use.
+              Things I use.
             </h2>
           </FadeIn>
 
