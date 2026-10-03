@@ -28,7 +28,17 @@ const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    role: 'Teaching Assistant',
+    role: 'Open Source Developer',
+    company: 'Public Invention',
+    period: '09/2026 – Present',
+    location: 'Remote',
+    type: 'Open Source',
+    description: 'Developing the Python and Flask backend for Librecorder, an open-source diagnostic platform built with the Kea Framework, collaborating with the machine learning team to integrate diagnostic models and meeting regularly with project mentors for technical direction.',
+    stack: ['Python', 'Flask', 'Kea Framework', 'JavaScript', 'Machine Learning'],
+    links: [],
+  },
+  {
+    role: 'Lead Teaching Assistant',
     company: 'Quakerbridge Learning Center',
     period: '05/2026 – Aug 2026',
     location: 'Mercerville, NJ',
@@ -45,7 +55,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'AI Fellow',
     company: 'Handshake AI',
-    period: '12/2025 – Present',
+    period: '12/2025 – 08/2026',
     location: 'Remote',
     type: 'Fellowship',
     description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
@@ -88,7 +98,8 @@ function FadeIn({
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
+    <>
+      <section id="experience" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
@@ -171,43 +182,58 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Education callout */}
-        <FadeIn delay={0.3} className="mt-16">
+      </div>
+    </section>
+
+    <section id="education" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
+      <div className="max-w-6xl mx-auto">
+        <FadeIn>
+          <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
+            03 / Education
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
+            What I&apos;ve learned.
+          </h2>
+        </FadeIn>
+        <FadeIn delay={0.2}>
           <div className="p-6 rounded-lg border border-border bg-card flex flex-wrap gap-4 items-center justify-between">
             <div>
-              <p className="text-xs font-mono text-cyan mb-1 uppercase tracking-wider">Education</p>
               <h3 className="text-base font-semibold text-foreground">
                 Rutgers University, New Brunswick
               </h3>
               <p className="text-sm text-muted-foreground mt-0.5">
-                Bachelor&apos;s in Computer Science · Minor in Economics · May 2027
+                Bachelor&apos;s in Computer Science · Minor in Economics
               </p>
-
             </div>
-              <div className="flex flex-wrap gap-1.5 max-w-sm">
-                <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
-                  Activities / Talks
+            <div className="flex flex-wrap gap-1.5 max-w-sm">
+              <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
+                Activities
+              </span>
+              {[
+                { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
+                { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
+                { label: 'USACS', href: 'https://usacs.org/' },
+                { label: 'Blueprint Backend Fellow', href: 'https://blueprint.rutgers.edu/' },
+              ].map((club) => (
+                <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors">
+                  {club.label}
+                </a>
+              ))}
+              <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mt-3 mb-1">
+                Relevant Coursework
+              </span>
+              {['Data Structures and Algorithms', 'Discrete Mathematics', 'Computer Architecture', 'Data Science', 'Systems Programming', 'Internet Technology', 'Machine Learning Principles', 'Economic Data Analytics', 'Money, Banking, and the Financial System'].map((course) => (
+                <span key={course} className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground">
+                  {course}
                 </span>
-                {[
-                  { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
-                  { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
-                  { label: 'RUMAD', href: 'https://rumad.rutgers.edu/' },
-                  { label: 'USACS', href: 'https://usacs.org/' },
-                ].map((club) => (
-                  <a
-                    key={club.label}
-                    href={club.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors"
-                  >
-                    {club.label}
-                  </a>
-                ))}
-              </div>
+              ))}
+            </div>
           </div>
         </FadeIn>
       </div>
     </section>
+    </>
   )
 }
