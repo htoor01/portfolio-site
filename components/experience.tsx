@@ -224,7 +224,7 @@ export default function Experience() {
               <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mt-3 mb-1">
                 Relevant Coursework
               </span>
-              {['Data Structures and Algorithms', 'Discrete Mathematics', 'Computer Architecture', 'Data Science', 'Systems Programming', 'Internet Technology', 'Machine Learning Principles'].map((course) => (
+              {['Data Structures and Algorithms', 'Discrete Mathematics', 'Computer Architecture', 'Data Science', 'Systems Programming', 'Internet Technology', 'Machine Learning Principles', 'Economic Data Analytics', 'Money, Banking, and the Financial System'].map((course) => (
                 <span key={course} className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground">
                   {course}
                 </span>
