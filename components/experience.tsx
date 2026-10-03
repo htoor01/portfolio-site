@@ -55,7 +55,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'AI Fellow',
     company: 'Handshake AI',
-    period: '12/2025 – Present',
+    period: '12/2025 – 08/2026',
     location: 'Remote',
     type: 'Fellowship',
     description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
@@ -185,7 +185,7 @@ export default function Experience() {
         <FadeIn delay={0.3} className="mt-16">
           <div id="education" className="p-6 rounded-lg border border-border bg-card flex flex-wrap gap-4 items-center justify-between">
             <div>
-              <p className="text-xs font-mono text-cyan mb-1 uppercase tracking-wider">Things I&apos;ve studied</p>
+              <p className="text-xs font-mono text-cyan mb-1 uppercase tracking-wider">Where I&apos;ve studied</p>
               <h3 className="text-base font-semibold text-foreground">
                 Rutgers University, New Brunswick
               </h3>
