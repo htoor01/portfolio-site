@@ -43,6 +43,16 @@ const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    role: 'Open Source Developer',
+    company: 'Public Invention',
+    period: '09/2026 – Present',
+    location: 'Remote',
+    type: 'Open Source',
+    description: 'Developing the Python and Flask backend for Librecorder, an open-source diagnostic platform built with the Kea Framework, collaborating with the machine learning team to integrate diagnostic models and meeting regularly with project mentors for technical direction.',
+    stack: ['Python', 'Flask', 'Kea Framework', 'JavaScript', 'Machine Learning'],
+    links: [],
+  },
+  {
     role: 'AI Fellow',
     company: 'Handshake AI',
     period: '12/2025 – Present',
