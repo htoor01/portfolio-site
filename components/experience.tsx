@@ -98,7 +98,8 @@ function FadeIn({
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
+    <>
+      <section id="experience" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
@@ -181,62 +182,58 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Education callout */}
-        <FadeIn delay={0.3} className="mt-16">
-          <div id="education" className="p-6 rounded-lg border border-border bg-card flex flex-wrap gap-4 items-center justify-between">
+      </div>
+    </section>
+
+    <section id="education" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
+      <div className="max-w-6xl mx-auto">
+        <FadeIn>
+          <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
+            03 / Education
+          </p>
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
+            What I&apos;ve learned.
+          </h2>
+        </FadeIn>
+        <FadeIn delay={0.2}>
+          <div className="p-6 rounded-lg border border-border bg-card flex flex-wrap gap-4 items-center justify-between">
             <div>
-              <p className="text-xs font-mono text-cyan mb-1 uppercase tracking-wider">Where I&apos;ve studied</p>
               <h3 className="text-base font-semibold text-foreground">
                 Rutgers University, New Brunswick
               </h3>
               <p className="text-sm text-muted-foreground mt-0.5">
                 Bachelor&apos;s in Computer Science · Minor in Economics
               </p>
-
             </div>
-              <div className="flex flex-wrap gap-1.5 max-w-sm">
-                <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
-                  Activities
+            <div className="flex flex-wrap gap-1.5 max-w-sm">
+              <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
+                Activities
+              </span>
+              {[
+                { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
+                { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
+                { label: 'USACS', href: 'https://usacs.org/' },
+                { label: 'Blueprint Backend Fellow', href: 'https://blueprint.rutgers.edu/' },
+              ].map((club) => (
+                <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors">
+                  {club.label}
+                </a>
+              ))}
+              <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mt-3 mb-1">
+                Relevant Coursework
+              </span>
+              {['Data Structures and Algorithms', 'Discrete Mathematics', 'Computer Architecture', 'Data Science', 'Systems Programming', 'Internet Technology', 'Machine Learning Principles'].map((course) => (
+                <span key={course} className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground">
+                  {course}
                 </span>
-                {[
-                  { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
-                  { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
-                  { label: 'USACS', href: 'https://usacs.org/' },
-                  { label: 'Blueprint Backend Fellow', href: 'https://blueprint.rutgers.edu/' },
-                ].map((club) => (
-                  <a
-                    key={club.label}
-                    href={club.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors"
-                  >
-                    {club.label}
-                  </a>
-                ))}
-                <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mt-3 mb-1">
-                  Relevant Coursework
-                </span>
-                {[
-                  'Data Structures and Algorithms',
-                  'Discrete Mathematics',
-                  'Computer Architecture',
-                  'Data Science',
-                  'Systems Programming',
-                  'Internet Technology',
-                  'Machine Learning Principles',
-                ].map((course) => (
-                  <span
-                    key={course}
-                    className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground"
-                  >
-                    {course}
-                  </span>
-                ))}
-              </div>
+              ))}
+            </div>
           </div>
         </FadeIn>
       </div>
     </section>
+    </>
   )
 }

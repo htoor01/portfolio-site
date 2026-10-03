@@ -82,7 +82,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
-            03 / Projects
+            04 / Projects
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>

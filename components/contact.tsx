@@ -31,7 +31,7 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto">
         <FadeIn>
           <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest text-center">
-            04 / Contact
+            05 / Contact
           </p>
         </FadeIn>
 
