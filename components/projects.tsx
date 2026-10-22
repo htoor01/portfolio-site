@@ -17,16 +17,17 @@ const PROJECTS = [
     highlight: '200+ submissions · Dockerized tests · Automated CI/CD',
   },
   {
-    title: 'JobMatch',
+    title: 'RU Afloat',
     description:
-      'Job ingestion and matching system that aggregates postings from 5+ job boards, stores raw data in S3 and normalized records in PostgreSQL, then ranks roles by career alignment.',
+      'Flood safety platform for Rutgers that combines an 18-hour machine-learning river forecast, live sensors and camera checks, flood-aware walking routes, voice guidance, student reports, and coordinator dispatch tools.',
     challenge:
-      'Making job search repeatable by combining resilient ingestion, normalized storage, weighted NumPy ranking, and reliable test coverage for new sources.',
-    stack: ['Python', 'Public APIs', 'AWS S3', 'PostgreSQL', 'NumPy', 'pytest'],
-    period: '2026',
-    github: 'https://github.com/htoor01/JobMatch',
+      'Grounding AI guidance in live app data while combining seven river gauges, rainfall, mapping, routing, accessibility features, and emergency response workflows into one reliable system.',
+    stack: ['TypeScript', 'Vite', 'MapLibre GL', 'Node.js', 'Python', 'scikit-learn', 'Gemini', 'ElevenLabs', 'ESP32'],
+    period: 'HackRU 2026',
+    github: 'https://github.com/hassan1brahim/RUAfloat',
+    devpost: 'https://devpost.com/software/ru-afloat',
     featured: true,
-    highlight: '5+ job boards · 10+ daily matches · Weighted ranking',
+    highlight: '18-hour forecast · Flood-aware routing · Voice accessibility',
   },
   {
     title: 'DermAI',

@@ -18,7 +18,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Founding Engineer',
     company: 'Lotari',
-    period: '11/2025 – Present',
+    period: '11/2025 – 06/2026',
     location: 'Remote',
     type: 'Startup',
     description: 'Built and maintained backend services for three legal-tech products using Python and REST APIs, automated testing and deployment with GitHub Actions and AWS, owned a product end-to-end from PRD to deployment, and reduced monthly infrastructure costs by 10%.',
@@ -35,10 +35,22 @@ const EXPERIENCES: Experience[] = [
     type: 'Open Source',
     description: 'Developing the Python and Flask backend for Librecorder, an open-source diagnostic platform built with the Kea Framework, collaborating with the machine learning team to integrate diagnostic models and meeting regularly with project mentors for technical direction.',
     stack: ['Python', 'Flask', 'Kea Framework', 'JavaScript', 'Machine Learning'],
+    links: [
+      { label: 'Public Invention', href: 'https://github.com/pubinv' },
+    ],
+  },
+  {
+    role: 'Backend Engineer Fellow',
+    company: 'Blueprint Rutgers',
+    period: '09/2026 – Present',
+    location: 'Remote',
+    type: 'Fellowship',
+    description: 'Building backend systems and services as a Blueprint Rutgers fellow, contributing production-minded engineering work alongside a student development team.',
+    stack: ['Python', 'Backend Systems', 'APIs', 'Git', 'Cloud Infrastructure'],
     links: [],
   },
   {
-    role: 'Lead Teaching Assistant',
+    role: 'summer Teaching Assistant',
     company: 'Quakerbridge Learning Center',
     period: '05/2026 – Aug 2026',
     location: 'Mercerville, NJ',
@@ -218,7 +230,8 @@ export default function Experience() {
                   { label: 'Creation of Games Society (COGS)', href: 'https://cogs.club/home' },
                   { label: 'Muslim Tech Collaborative', href: 'https://mtcrutgers.com' },
                 ].map((club) => (
-                  <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors">
+                  <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-foreground hover:text-cyan hover:border-cyan/40 transition-colors">
+                    <ExternalLink size={12} />
                     {club.label}
                   </a>
                 ))}
