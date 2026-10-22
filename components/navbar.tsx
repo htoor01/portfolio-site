@@ -16,7 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [isLight, setIsLight] = useState(false)
+  const [isLight, setIsLight] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)

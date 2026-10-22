@@ -50,7 +50,7 @@ const EXPERIENCES: Experience[] = [
     links: [],
   },
   {
-    role: 'summer Teaching Assistant',
+    role: 'Summer Teaching Assistant',
     company: 'Quakerbridge Learning Center',
     period: '05/2026 – Aug 2026',
     location: 'Mercerville, NJ',
