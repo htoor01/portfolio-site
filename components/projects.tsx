@@ -17,16 +17,17 @@ const PROJECTS = [
     highlight: '200+ submissions · Dockerized tests · Automated CI/CD',
   },
   {
-    title: 'JobMatch',
+    title: 'RU Afloat',
     description:
-      'Job ingestion and matching system that aggregates postings from 5+ job boards, stores raw data in S3 and normalized records in PostgreSQL, then ranks roles by career alignment.',
+      'Flood safety platform for Rutgers that combines an 18-hour machine-learning river forecast, live sensors and camera checks, flood-aware walking routes, voice guidance, student reports, and coordinator dispatch tools.',
     challenge:
-      'Making job search repeatable by combining resilient ingestion, normalized storage, weighted NumPy ranking, and reliable test coverage for new sources.',
-    stack: ['Python', 'Public APIs', 'AWS S3', 'PostgreSQL', 'NumPy', 'pytest'],
-    period: '2026',
-    github: 'https://github.com/htoor01/JobMatch',
+      'Grounding AI guidance in live app data while combining seven river gauges, rainfall, mapping, routing, accessibility features, and emergency response workflows into one reliable system.',
+    stack: ['TypeScript', 'Vite', 'MapLibre GL', 'Node.js', 'Python', 'scikit-learn', 'Gemini', 'ElevenLabs', 'ESP32'],
+    period: 'HackRU 2026',
+    github: 'https://github.com/hassan1brahim/RUAfloat',
+    devpost: 'https://devpost.com/software/ru-afloat',
     featured: true,
-    highlight: '5+ job boards · 10+ daily matches · Weighted ranking',
+    highlight: '18-hour forecast · Flood-aware routing · Voice accessibility',
   },
   {
     title: 'DermAI',
@@ -40,17 +41,6 @@ const PROJECTS = [
     devpost: 'https://devpost.com/software/dermai-fsxq17',
     featured: true,
     highlight: 'EfficientNet-B0 · 8 condition classes · Full end-to-end pipeline',
-  },
-  {
-    title: 'This Portfolio',
-    description:
-      "The project you're viewing right now! A dark-mode developer portfolio built with Next.js 16 App Router, Framer Motion animations, Tailwind CSS v4, and deployed on Vercel.",
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-    period: '05/2026',
-    github: 'https://github.com/htoor01',
-    featured: false,
-    highlight: 'This site · Framer Motion · Tailwind v4 · Light/Dark mode',
-    isPortfolio: true,
   },
 ]
 
@@ -87,16 +77,9 @@ export default function Projects() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-            Things I&apos;ve built.
+            Projects I&apos;ve built.
           </h2>
         </FadeIn>
-        <FadeIn delay={0.15}>
-          <p className="text-muted-foreground text-base mb-16 max-w-xl leading-relaxed">
-            Infrastructure-first projects emphasizing performance, scalability, and clean
-            abstractions.
-          </p>
-        </FadeIn>
-
         {/* Featured projects */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {PROJECTS.filter((p) => p.featured).map((project, i) => (

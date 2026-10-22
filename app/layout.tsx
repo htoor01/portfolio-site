@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     description: 'Backend engineer focused on distributed systems, AI infrastructure, and developer tooling.',
     type: 'website',
   },
-  themeColor: '#0a0a0a',
+  themeColor: '#fafafa',
 }
 
 export default function RootLayout({
@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistMono.variable} bg-background`}>
+    <html lang="en" className={`${inter.variable} ${geistMono.variable} light bg-background`}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   )

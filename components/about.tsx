@@ -65,7 +65,7 @@ export default function About() {
         <div>
           <FadeIn delay={0.1}>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-10 text-balance">
-              Things I use.
+              Tech I use.
             </h2>
           </FadeIn>
 

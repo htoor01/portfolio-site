@@ -82,9 +82,9 @@ export default function Hero() {
         >
           <span className="text-cyan">Backend</span>
           <span className="text-foreground"> &amp; </span>
-          <span className="text-cyan">Distributed</span>
+          <span className="text-cyan">Infrastructure</span>
           <br />
-          <span className="text-foreground">Systems Engineer</span>
+          <span className="text-foreground">Engineer</span>
         </motion.h1>
 
         {/* Terminal whoami card */}
@@ -109,7 +109,7 @@ export default function Hero() {
               <div className="mb-3">
                 <span className="text-muted-foreground">→ </span>
                 <span className="text-foreground">haaris-toor</span>
-                <span className="text-muted-foreground"> · founding-engineer · ai-fellow · cs-student</span>
+                <span className="text-muted-foreground"> · founding-engineer · backend-fellow · cs-student</span>
               </div>
               <div className="border-t border-border pt-3 text-muted-foreground leading-relaxed">
                 CS student at Rutgers University building scalable systems, serverless cloud
@@ -150,7 +150,7 @@ export default function Hero() {
           className="flex items-center justify-center mb-12"
         >
           <a
-            href="https://blobs.vusercontent.net/blob/Haaris%20Toor%20Newgrad%20Resume-EGDDBOibuxSOlGzcXGS94w4z93jVOI.pdf"
+            href="https://blobs.vusercontent.net/blob/Haaris%20Intern-s51IZclKItApJPkqVOKoPDKqiz0fLJ.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-border text-sm font-medium text-foreground hover:border-cyan/50 hover:text-cyan transition-colors"

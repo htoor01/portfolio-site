@@ -18,7 +18,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Founding Engineer',
     company: 'Lotari',
-    period: '11/2025 – Present',
+    period: '11/2025 – 06/2026',
     location: 'Remote',
     type: 'Startup',
     description: 'Built and maintained backend services for three legal-tech products using Python and REST APIs, automated testing and deployment with GitHub Actions and AWS, owned a product end-to-end from PRD to deployment, and reduced monthly infrastructure costs by 10%.',
@@ -35,10 +35,22 @@ const EXPERIENCES: Experience[] = [
     type: 'Open Source',
     description: 'Developing the Python and Flask backend for Librecorder, an open-source diagnostic platform built with the Kea Framework, collaborating with the machine learning team to integrate diagnostic models and meeting regularly with project mentors for technical direction.',
     stack: ['Python', 'Flask', 'Kea Framework', 'JavaScript', 'Machine Learning'],
+    links: [
+      { label: 'Public Invention', href: 'https://github.com/pubinv' },
+    ],
+  },
+  {
+    role: 'Backend Engineer Fellow',
+    company: 'Blueprint Rutgers',
+    period: '09/2026 – Present',
+    location: 'Remote',
+    type: 'Fellowship',
+    description: 'Building backend systems and services as a Blueprint Rutgers fellow, contributing production-minded engineering work alongside a student development team.',
+    stack: ['Python', 'Backend Systems', 'APIs', 'Git', 'Cloud Infrastructure'],
     links: [],
   },
   {
-    role: 'Lead Teaching Assistant',
+    role: 'summer Teaching Assistant',
     company: 'Quakerbridge Learning Center',
     period: '05/2026 – Aug 2026',
     location: 'Mercerville, NJ',
@@ -108,7 +120,7 @@ export default function Experience() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-16 text-balance">
-            Things I&apos;ve done.
+            Work I&apos;ve done.
           </h2>
         </FadeIn>
 
@@ -198,7 +210,7 @@ export default function Experience() {
           </h2>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <div className="p-6 rounded-lg border border-border bg-card flex flex-wrap gap-4 items-center justify-between">
+          <div className="p-6 rounded-lg border border-border bg-card">
             <div>
               <h3 className="text-base font-semibold text-foreground">
                 Rutgers University, New Brunswick
@@ -207,20 +219,22 @@ export default function Experience() {
                 Bachelor&apos;s in Computer Science · Minor in Economics
               </p>
             </div>
-            <div className="flex flex-wrap gap-1.5 max-w-sm">
+            <div className="flex flex-wrap gap-1.5 mt-6">
               <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
                 Activities
               </span>
-              {[
-                { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
-                { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
-                { label: 'USACS', href: 'https://usacs.org/' },
-                { label: 'Blueprint Backend Fellow', href: 'https://blueprint.rutgers.edu/' },
-              ].map((club) => (
-                <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors">
-                  {club.label}
-                </a>
-              ))}
+                {[
+                  { label: 'Blueprint Backend Fellow', href: 'https://rutgersblueprint.com' },
+                  { label: 'Mobile App Development (RUMAD)', href: 'https://rumad.club' },
+                  { label: 'Verizon Smart Campus Competition', href: 'https://soe.rutgers.edu/smart-campus' },
+                  { label: 'Creation of Games Society (COGS)', href: 'https://cogs.club/home' },
+                  { label: 'Muslim Tech Collaborative', href: 'https://mtcrutgers.com' },
+                ].map((club) => (
+                  <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-foreground hover:text-cyan hover:border-cyan/40 transition-colors">
+                    <ExternalLink size={12} />
+                    {club.label}
+                  </a>
+                ))}
               <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mt-3 mb-1">
                 Relevant Coursework
               </span>
