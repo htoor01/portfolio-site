@@ -198,7 +198,7 @@ export default function Experience() {
           </h2>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <div className="p-6 rounded-lg border border-border bg-card flex flex-wrap gap-4 items-center justify-between">
+          <div className="p-6 rounded-lg border border-border bg-card">
             <div>
               <h3 className="text-base font-semibold text-foreground">
                 Rutgers University, New Brunswick
@@ -207,7 +207,7 @@ export default function Experience() {
                 Bachelor&apos;s in Computer Science · Minor in Economics
               </p>
             </div>
-            <div className="flex flex-wrap gap-1.5 max-w-sm">
+            <div className="flex flex-wrap gap-1.5 mt-6">
               <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
                 Activities
               </span>
