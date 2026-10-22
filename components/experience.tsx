@@ -108,7 +108,7 @@ export default function Experience() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-16 text-balance">
-            Things I&apos;ve done.
+            Work I&apos;ve done.
           </h2>
         </FadeIn>
 
@@ -211,16 +211,17 @@ export default function Experience() {
               <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
                 Activities
               </span>
-              {[
-                { label: 'MTC Rutgers', href: 'https://mtc.rutgers.edu/' },
-                { label: 'IEEE', href: 'https://ieee.rutgers.edu/' },
-                { label: 'USACS', href: 'https://usacs.org/' },
-                { label: 'Blueprint Backend Fellow', href: 'https://blueprint.rutgers.edu/' },
-              ].map((club) => (
-                <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors">
-                  {club.label}
-                </a>
-              ))}
+                {[
+                  { label: 'Blueprint Backend Fellow', href: 'https://rutgersblueprint.com' },
+                  { label: 'Mobile App Development (RUMAD)', href: 'https://rumad.club' },
+                  { label: 'Verizon Smart Campus Competition', href: 'https://soe.rutgers.edu/smart-campus' },
+                  { label: 'Creation of Games Society (COGS)', href: 'https://cogs.club/home' },
+                  { label: 'Muslim Tech Collaborative', href: 'https://mtcrutgers.com' },
+                ].map((club) => (
+                  <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground hover:text-cyan transition-colors">
+                    {club.label}
+                  </a>
+                ))}
               <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mt-3 mb-1">
                 Relevant Coursework
               </span>

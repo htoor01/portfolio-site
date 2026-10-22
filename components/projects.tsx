@@ -41,17 +41,6 @@ const PROJECTS = [
     featured: true,
     highlight: 'EfficientNet-B0 · 8 condition classes · Full end-to-end pipeline',
   },
-  {
-    title: 'This Portfolio',
-    description:
-      "The project you're viewing right now! A dark-mode developer portfolio built with Next.js 16 App Router, Framer Motion animations, Tailwind CSS v4, and deployed on Vercel.",
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-    period: '05/2026',
-    github: 'https://github.com/htoor01',
-    featured: false,
-    highlight: 'This site · Framer Motion · Tailwind v4 · Light/Dark mode',
-    isPortfolio: true,
-  },
 ]
 
 function FadeIn({
@@ -87,16 +76,9 @@ export default function Projects() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-            Things I&apos;ve built.
+            Projects I&apos;ve built.
           </h2>
         </FadeIn>
-        <FadeIn delay={0.15}>
-          <p className="text-muted-foreground text-base mb-16 max-w-xl leading-relaxed">
-            Infrastructure-first projects emphasizing performance, scalability, and clean
-            abstractions.
-          </p>
-        </FadeIn>
-
         {/* Featured projects */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {PROJECTS.filter((p) => p.featured).map((project, i) => (
