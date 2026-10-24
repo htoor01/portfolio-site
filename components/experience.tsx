@@ -115,8 +115,8 @@ export default function Experience() {
     'Open Source Developer',
     'Founding Engineer',
     'AI Fellow',
-    'Summer Teaching Assistant',
     'Backend Engineer Fellow',
+    'Summer Teaching Assistant',
     'Laboratory Technician',
   ].map((role) => EXPERIENCES.find((experience) => experience.role === role)!).filter(Boolean)
   const visibleExperiences = showAll ? orderedExperiences : orderedExperiences.slice(0, 2)
