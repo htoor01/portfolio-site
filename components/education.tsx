@@ -37,7 +37,9 @@ export default function Education() {
               </div>
               </div>
             </div>
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-10-24%20at%206.38.28%E2%80%AFPM-P9GXNhYcGXOcZbgND97KtOXbAs5S3I.png" alt="Rutgers University logo" className="h-24 w-24 sm:h-32 sm:w-32 object-contain flex-shrink-0" />
+            <div className="h-24 w-24 sm:h-32 sm:w-32 rounded-full overflow-hidden border-2 border-cyan/30 ring-2 ring-border bg-white flex-shrink-0 flex items-center justify-center">
+              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-10-24%20at%206.38.28%E2%80%AFPM-P9GXNhYcGXOcZbgND97KtOXbAs5S3I.png" alt="Rutgers University logo" className="h-full w-full object-contain" />
+            </div>
           </div>
         </FadeIn>
       </div>
