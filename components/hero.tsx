@@ -72,19 +72,15 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Main headline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6"
+          className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6 whitespace-nowrap"
         >
-          <span className="text-cyan">Backend</span>
-          <span className="text-foreground"> &amp; </span>
-          <span className="text-cyan">Infrastructure</span>
-          <br />
-          <span className="text-foreground">Engineer</span>
+          <span className="text-cyan">Backend SWE</span>
         </motion.h1>
 
         {/* Terminal whoami card */}
@@ -92,7 +88,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-left mb-4 w-full max-w-2xl px-5 py-4 rounded-lg border border-border bg-card font-mono text-xs sm:text-sm leading-relaxed"
+          className="text-left mb-4 w-full max-w-4xl mx-auto px-5 py-4 rounded-lg border border-border bg-card font-mono text-xs sm:text-sm leading-relaxed"
         >
           <div className="flex items-center gap-1.5 mb-3">
             <span className="w-2.5 h-2.5 rounded-full bg-red-500/60" />

@@ -124,14 +124,14 @@ export default function Experience() {
   return (
     <>
       <section id="experience" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <FadeIn>
-          <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
+          <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest text-center">
             02 / Experience
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-16 text-balance">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-16 text-balance text-center">
             Work I&apos;ve done.
           </h2>
         </FadeIn>

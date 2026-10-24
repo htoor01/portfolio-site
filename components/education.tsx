@@ -22,9 +22,9 @@ const activities = [
 export default function Education() {
   return (
     <section id="education" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
-      <div className="max-w-6xl mx-auto">
-        <FadeIn><p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">01 / Education</p></FadeIn>
-        <FadeIn delay={0.1}><h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">What I&apos;ve learned.</h2></FadeIn>
+      <div className="max-w-5xl mx-auto">
+        <FadeIn><p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest text-center">01 / Education</p></FadeIn>
+        <FadeIn delay={0.1}><h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance text-center">What I&apos;ve learned.</h2></FadeIn>
         <FadeIn delay={0.2}>
           <div className="p-6 rounded-lg border border-border bg-card flex items-center justify-between gap-8">
             <div className="min-w-0">
