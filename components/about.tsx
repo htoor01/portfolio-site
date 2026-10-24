@@ -5,27 +5,27 @@ import { motion } from 'framer-motion'
 const SKILL_GROUPS = [
   {
     label: 'Languages',
-    skills: ['Python', 'TypeScript', 'Java', 'C/C++', 'SQL', 'JavaScript'],
+    skills: ['Java', 'Python', 'TypeScript', 'JavaScript', 'SQL', 'HTML/CSS'],
   },
   {
     label: 'Backend',
-    skills: ['FastAPI', 'Express.js', 'Node.js', 'Flask', 'REST APIs', 'JWT Auth'],
+    skills: ['Node.js', 'Spring Boot', 'Flask', 'REST APIs', 'PostgreSQL', 'SQLite'],
   },
   {
     label: 'Cloud / Infra',
-    skills: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'CDK', 'Docker', 'Vercel'],
+    skills: ['AWS Lambda', 'S3', 'IAM', 'Textract', 'CDK', 'Docker', 'Linux', 'Git'],
   },
   {
     label: 'AI Systems',
-    skills: ['AWS Bedrock', 'Prompt Eval', 'RAG', 'LLM Tooling', 'pandas / NumPy'],
+    skills: ['JUnit', 'pytest', 'Claude Code', 'Codex', 'Machine Learning'],
   },
   {
     label: 'Databases',
-    skills: ['DynamoDB', 'PostgreSQL', 'Redis', 'SQL', 'Matplotlib', 'Plotly'],
+    skills: ['PostgreSQL', 'SQLite', 'SQL', 'Maven'],
   },
   {
     label: 'Frameworks',
-    skills: ['React', 'Next.js', 'Tailwind CSS', 'Git', 'CI/CD'],
+    skills: ['React', 'MapLibre GL', 'Vite', 'GitHub Actions', 'Spring Boot'],
   },
 ]
 

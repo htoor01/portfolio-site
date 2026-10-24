@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { ExternalLink } from 'lucide-react'
 
 type Experience = {
@@ -21,8 +22,8 @@ const EXPERIENCES: Experience[] = [
     period: '11/2025 – 06/2026',
     location: 'Remote',
     type: 'Startup',
-    description: 'Built and maintained backend services for three legal-tech products using Python and REST APIs, automated testing and deployment with GitHub Actions and AWS, owned a product end-to-end from PRD to deployment, and reduced monthly infrastructure costs by 10%.',
-    stack: ['Python', 'REST APIs', 'GitHub Actions', 'AWS', 'Authentication', 'AI Document Processing'],
+    description: 'Developed IntakeAI with TypeScript on AWS to process 150+ legal matters, fixed ElectAI document extraction with Lambda and Textract to reach 90% field accuracy, and configured short-lived OIDC credentials for CI deployments.',
+    stack: ['TypeScript', 'AWS Lambda', 'AWS S3', 'AWS IAM', 'Textract', 'CDK', 'GitHub Actions'],
     links: [
       { label: 'Lotari', href: 'https://www.lotari.ai' },
     ],
@@ -33,8 +34,8 @@ const EXPERIENCES: Experience[] = [
     period: '09/2026 – Present',
     location: 'Remote',
     type: 'Open Source',
-    description: 'Developing the Python and Flask backend for Librecorder, an open-source diagnostic platform built with the Kea Framework, collaborating with the machine learning team to integrate diagnostic models and meeting regularly with project mentors for technical direction.',
-    stack: ['Python', 'Flask', 'Kea Framework', 'JavaScript', 'Machine Learning'],
+    description: 'Defining a standardized JSON output schema with the ML team, writing pytest contract tests in GitHub Actions, restructuring the Flask backend, and improving contributor documentation for the AWS-hosted Librecorder platform.',
+    stack: ['Python', 'Flask', 'pytest', 'GitHub Actions', 'AWS', 'Git'],
     links: [
       { label: 'Public Invention', href: 'https://github.com/pubinv' },
     ],
@@ -45,8 +46,8 @@ const EXPERIENCES: Experience[] = [
     period: '09/2026 – Present',
     location: 'Remote',
     type: 'Fellowship',
-    description: 'Building backend systems and services as a Blueprint Rutgers fellow, contributing production-minded engineering work alongside a student development team.',
-    stack: ['Python', 'Backend Systems', 'APIs', 'Git', 'Cloud Infrastructure'],
+    description: 'Building backend functionality for Python and SQLite applications in a five-person team through Git-based collaboration.',
+    stack: ['Python', 'SQLite', 'Git'],
     links: [],
   },
   {
@@ -109,6 +110,9 @@ function FadeIn({
 }
 
 export default function Experience() {
+  const [showAll, setShowAll] = useState(false)
+  const visibleExperiences = showAll ? EXPERIENCES : EXPERIENCES.slice(0, 2)
+
   return (
     <>
       <section id="experience" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
@@ -129,7 +133,7 @@ export default function Experience() {
           <div className="absolute left-0 top-0 bottom-0 w-px bg-border hidden md:block" />
 
           <div className="space-y-12">
-            {EXPERIENCES.map((exp, i) => (
+            {visibleExperiences.map((exp, i) => (
               <FadeIn key={exp.role + exp.company} delay={0.1 + i * 0.1}>
                 <div className="md:pl-10 relative group">
                   {/* Timeline dot */}
@@ -194,60 +198,16 @@ export default function Experience() {
           </div>
         </div>
 
+        {EXPERIENCES.length > 2 && (
+          <button type="button" onClick={() => setShowAll((current) => !current)} className="mt-8 mx-auto flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-cyan transition-colors">
+            {showAll ? 'Show less' : 'Show more'}
+            <span aria-hidden="true" className={`transition-transform ${showAll ? 'rotate-180' : ''}`}>⌄</span>
+          </button>
+        )}
       </div>
     </section>
 
-    <section id="education" className="py-28 px-6 sm:px-12 lg:px-24 border-t border-border">
-      <div className="max-w-6xl mx-auto">
-        <FadeIn>
-          <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
-            03 / Education
-          </p>
-        </FadeIn>
-        <FadeIn delay={0.1}>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-            What I&apos;ve learned.
-          </h2>
-        </FadeIn>
-        <FadeIn delay={0.2}>
-          <div className="p-6 rounded-lg border border-border bg-card">
-            <div>
-              <h3 className="text-base font-semibold text-foreground">
-                Rutgers University, New Brunswick
-              </h3>
-              <p className="text-sm text-muted-foreground mt-0.5">
-                Bachelor&apos;s in Computer Science · Minor in Economics
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-1.5 mt-6">
-              <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mb-1">
-                Activities
-              </span>
-                {[
-                  { label: 'Blueprint Backend Fellow', href: 'https://rutgersblueprint.com' },
-                  { label: 'Mobile App Development (RUMAD)', href: 'https://rumad.club' },
-                  { label: 'Verizon Smart Campus Competition', href: 'https://soe.rutgers.edu/smart-campus' },
-                  { label: 'Creation of Games Society (COGS)', href: 'https://cogs.club/home' },
-                  { label: 'Muslim Tech Collaborative', href: 'https://mtcrutgers.com' },
-                ].map((club) => (
-                  <a key={club.label} href={club.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-border text-xs font-mono text-foreground hover:text-cyan hover:border-cyan/40 transition-colors">
-                    <ExternalLink size={12} />
-                    {club.label}
-                  </a>
-                ))}
-              <span className="w-full text-xs font-mono text-cyan uppercase tracking-wider mt-3 mb-1">
-                Relevant Coursework
-              </span>
-              {['Data Structures and Algorithms', 'Discrete Mathematics', 'Computer Architecture', 'Data Science', 'Systems Programming', 'Internet Technology', 'Machine Learning Principles', 'Economic Data Analytics', 'Money, Banking, and the Financial System'].map((course) => (
-                <span key={course} className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground">
-                  {course}
-                </span>
-              ))}
-            </div>
-          </div>
-        </FadeIn>
-      </div>
-    </section>
+
     </>
   )
 }
