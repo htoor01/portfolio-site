@@ -58,7 +58,7 @@ export default function About() {
           </FadeIn>
 
           {/* Skills grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             {SKILL_GROUPS.map((group, i) => (
               <FadeIn key={group.label} delay={0.1 + i * 0.08}>
                 <div className="p-4 rounded-lg border border-border bg-card hover:border-cyan/30 transition-colors group">

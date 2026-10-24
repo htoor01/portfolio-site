@@ -108,7 +108,11 @@ export default function Hero() {
               </div>
               <div className="mb-3">
                 <span className="text-muted-foreground">→ </span>
-                <span className="text-foreground">open to SWE Backend and Infra roles for Summer 2027.</span>
+                <span className="text-foreground">CS Student at Rutgers, previous Founding Engineer at Lotari, current Open Source Developer at Public Invention &amp; Backend Fellow at Blueprint (Rutgers)</span>
+              </div>
+              <div className="border-t border-border pt-3">
+                <span className="text-muted-foreground">→ </span>
+                <span className="text-foreground">Open to SWE Backend and Infra roles for Summer 2027.</span>
               </div>
             </div>
             {/* Right: profile photo */}
