@@ -6,10 +6,10 @@ import { Github, Linkedin, Menu, X, Sun, Moon } from 'lucide-react'
 
 const navLinks = [
   { label: 'To Top', href: '#top' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#experience' },
   { label: 'Education', href: '#education' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Contact', href: '#contact' },
 ]
 

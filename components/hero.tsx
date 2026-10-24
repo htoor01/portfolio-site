@@ -72,19 +72,15 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Main headline */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6"
+          className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6 whitespace-nowrap"
         >
-          <span className="text-cyan">Backend</span>
-          <span className="text-foreground"> &amp; </span>
-          <span className="text-cyan">Infrastructure</span>
-          <br />
-          <span className="text-foreground">Engineer</span>
+          <span className="text-cyan">Backend Engineer</span>
         </motion.h1>
 
         {/* Terminal whoami card */}
@@ -92,7 +88,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-left mb-4 w-full max-w-2xl px-5 py-4 rounded-lg border border-border bg-card font-mono text-xs sm:text-sm leading-relaxed"
+          className="text-left mb-4 w-full max-w-4xl mx-auto px-5 py-4 rounded-lg border border-border bg-card font-mono text-xs sm:text-sm leading-relaxed"
         >
           <div className="flex items-center gap-1.5 mb-3">
             <span className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
@@ -108,12 +104,11 @@ export default function Hero() {
               </div>
               <div className="mb-3">
                 <span className="text-muted-foreground">→ </span>
-                <span className="text-foreground">haaris-toor</span>
-                <span className="text-muted-foreground"> · founding-engineer · backend-fellow · cs-student</span>
+                <span className="text-foreground">CS Student at Rutgers, previous Founding Engineer at Lotari, current Open Source Developer at Public Invention &amp; Backend Fellow at Blueprint (Rutgers)</span>
               </div>
-              <div className="border-t border-border pt-3 text-muted-foreground leading-relaxed">
-                CS student at Rutgers University building scalable systems, serverless cloud
-                infrastructure, and AI-powered tooling.
+              <div className="border-t border-border pt-3">
+                <span className="text-muted-foreground">→ </span>
+                <span className="text-foreground">Open to SWE Backend and Infra roles for Summer 2027.</span>
               </div>
             </div>
             {/* Right: profile photo */}
@@ -150,7 +145,7 @@ export default function Hero() {
           className="flex items-center justify-center mb-12"
         >
           <a
-            href="https://blobs.vusercontent.net/blob/Haaris%20Intern-s51IZclKItApJPkqVOKoPDKqiz0fLJ.pdf"
+            href="https://blobs.vusercontent.net/blob/Haaris%20Intern%202026-cmpI3Fpld5xYh9KuztaxHkoEKonLdt.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-border text-sm font-medium text-foreground hover:border-cyan/50 hover:text-cyan transition-colors"

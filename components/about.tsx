@@ -5,27 +5,15 @@ import { motion } from 'framer-motion'
 const SKILL_GROUPS = [
   {
     label: 'Languages',
-    skills: ['Python', 'TypeScript', 'Java', 'C/C++', 'SQL', 'JavaScript'],
+    skills: ['Java', 'Python', 'TypeScript', 'JavaScript', 'SQL', 'HTML/CSS'],
   },
   {
-    label: 'Backend',
-    skills: ['FastAPI', 'Express.js', 'Node.js', 'Flask', 'REST APIs', 'JWT Auth'],
+    label: 'Frameworks & Tools',
+    skills: ['Node.js', 'Spring Boot', 'Flask', 'React', 'MapLibre GL', 'Vite', 'Git', 'GitHub Actions', 'Docker', 'Linux', 'Maven', 'JUnit', 'pytest'],
   },
   {
-    label: 'Cloud / Infra',
-    skills: ['AWS Lambda', 'API Gateway', 'DynamoDB', 'CDK', 'Docker', 'Vercel'],
-  },
-  {
-    label: 'AI Systems',
-    skills: ['AWS Bedrock', 'Prompt Eval', 'RAG', 'LLM Tooling', 'pandas / NumPy'],
-  },
-  {
-    label: 'Databases',
-    skills: ['DynamoDB', 'PostgreSQL', 'Redis', 'SQL', 'Matplotlib', 'Plotly'],
-  },
-  {
-    label: 'Frameworks',
-    skills: ['React', 'Next.js', 'Tailwind CSS', 'Git', 'CI/CD'],
+    label: 'AI & Cloud',
+    skills: ['AWS Lambda', 'S3', 'IAM', 'Textract', 'CDK', 'Claude Code', 'Codex', 'Machine Learning'],
   },
 ]
 
@@ -54,23 +42,23 @@ function FadeIn({
 export default function About() {
   return (
     <section id="skills" className="py-28 px-6 sm:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         {/* Section label */}
         <FadeIn>
-          <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
-            01 / Skills
+          <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest text-center">
+            04 / Skills
           </p>
         </FadeIn>
 
         <div>
           <FadeIn delay={0.1}>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-10 text-balance">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-10 text-balance text-center">
               Tech I use.
             </h2>
           </FadeIn>
 
           {/* Skills grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             {SKILL_GROUPS.map((group, i) => (
               <FadeIn key={group.label} delay={0.1 + i * 0.08}>
                 <div className="p-4 rounded-lg border border-border bg-card hover:border-cyan/30 transition-colors group">
