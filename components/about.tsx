@@ -8,24 +8,12 @@ const SKILL_GROUPS = [
     skills: ['Java', 'Python', 'TypeScript', 'JavaScript', 'SQL', 'HTML/CSS'],
   },
   {
-    label: 'Backend',
-    skills: ['Node.js', 'Spring Boot', 'Flask', 'REST APIs', 'PostgreSQL', 'SQLite'],
+    label: 'Frameworks & Tools',
+    skills: ['Node.js', 'Spring Boot', 'Flask', 'React', 'MapLibre GL', 'Vite', 'Git', 'GitHub Actions', 'Docker', 'Linux', 'Maven', 'JUnit', 'pytest'],
   },
   {
-    label: 'Cloud / Infra',
-    skills: ['AWS Lambda', 'S3', 'IAM', 'Textract', 'CDK', 'Docker', 'Linux', 'Git'],
-  },
-  {
-    label: 'AI Systems',
-    skills: ['JUnit', 'pytest', 'Claude Code', 'Codex', 'Machine Learning'],
-  },
-  {
-    label: 'Databases',
-    skills: ['PostgreSQL', 'SQLite', 'SQL', 'Maven'],
-  },
-  {
-    label: 'Frameworks',
-    skills: ['React', 'MapLibre GL', 'Vite', 'GitHub Actions', 'Spring Boot'],
+    label: 'AI & Cloud',
+    skills: ['AWS Lambda', 'S3', 'IAM', 'Textract', 'CDK', 'Claude Code', 'Codex', 'Machine Learning'],
   },
 ]
 
@@ -58,7 +46,7 @@ export default function About() {
         {/* Section label */}
         <FadeIn>
           <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
-            01 / Skills
+            04 / Skills
           </p>
         </FadeIn>
 

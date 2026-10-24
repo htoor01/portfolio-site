@@ -72,7 +72,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <FadeIn>
           <p className="font-mono text-xs text-cyan mb-3 uppercase tracking-widest">
-            04 / Projects
+            03 / Projects
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>
@@ -81,7 +81,7 @@ export default function Projects() {
           </h2>
         </FadeIn>
         {/* Featured projects */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 gap-6 mb-6">
           {PROJECTS.filter((p) => p.featured).map((project, i) => (
             <FadeIn key={project.title} delay={0.1 + i * 0.1}>
               <motion.div

@@ -22,7 +22,7 @@ const EXPERIENCES: Experience[] = [
     period: '11/2025 – 06/2026',
     location: 'Remote',
     type: 'Startup',
-    description: 'Developed IntakeAI with TypeScript on AWS to process 150+ legal matters, fixed ElectAI document extraction with Lambda and Textract to reach 90% field accuracy, and configured short-lived OIDC credentials for CI deployments.',
+    description: 'Built and maintained backend services for three legal-tech products using Python and REST APIs, automated testing and deployment with GitHub Actions and AWS, owned a product end-to-end from PRD to deployment, and reduced monthly infrastructure costs by 10%.',
     stack: ['TypeScript', 'AWS Lambda', 'AWS S3', 'AWS IAM', 'Textract', 'CDK', 'GitHub Actions'],
     links: [
       { label: 'Lotari', href: 'https://www.lotari.ai' },
@@ -68,7 +68,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'AI Fellow',
     company: 'Handshake AI',
-    period: '12/2025 – 08/2026',
+    period: '12/2025 – Present',
     location: 'Remote',
     type: 'Fellowship',
     description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
@@ -111,7 +111,15 @@ function FadeIn({
 
 export default function Experience() {
   const [showAll, setShowAll] = useState(false)
-  const visibleExperiences = showAll ? EXPERIENCES : EXPERIENCES.slice(0, 2)
+  const orderedExperiences = [
+    'Open Source Developer',
+    'Founding Engineer',
+    'AI Fellow',
+    'Summer Teaching Assistant',
+    'Backend Engineer Fellow',
+    'Laboratory Technician',
+  ].map((role) => EXPERIENCES.find((experience) => experience.role === role)!).filter(Boolean)
+  const visibleExperiences = showAll ? orderedExperiences : orderedExperiences.slice(0, 2)
 
   return (
     <>

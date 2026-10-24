@@ -108,12 +108,7 @@ export default function Hero() {
               </div>
               <div className="mb-3">
                 <span className="text-muted-foreground">→ </span>
-                <span className="text-foreground">haaris-toor</span>
-                <span className="text-muted-foreground"> · founding-engineer · backend-fellow · cs-student</span>
-              </div>
-              <div className="border-t border-border pt-3 text-muted-foreground leading-relaxed">
-                CS student at Rutgers University building scalable systems, serverless cloud
-                infrastructure, and AI-powered tooling.
+                <span className="text-foreground">open to SWE Backend and Infra roles for Summer 2027.</span>
               </div>
             </div>
             {/* Right: profile photo */}
