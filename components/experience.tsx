@@ -19,7 +19,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Founding Engineer',
     company: 'Lotari',
-    period: '11/2025 – 06/2026',
+    period: 'NOV 2025 – JUN 2026',
     location: 'Remote',
     type: 'Startup',
     description: 'Built and maintained backend services for three legal-tech products using Python and REST APIs, automated testing and deployment with GitHub Actions and AWS, owned a product end-to-end from PRD to deployment, and reduced monthly infrastructure costs by 10%.',
@@ -31,7 +31,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Open Source Developer',
     company: 'Public Invention',
-    period: '09/2026 – Present',
+    period: 'SEP 2026 – Present',
     location: 'Remote',
     type: 'Open Source',
     description: 'Defining a standardized JSON output schema with the ML team, writing pytest contract tests in GitHub Actions, restructuring the Flask backend, and improving contributor documentation for the AWS-hosted Librecorder platform.',
@@ -43,7 +43,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Backend Engineer Fellow',
     company: 'Blueprint Rutgers',
-    period: '09/2026 – Present',
+    period: 'SEP 2026 – Present',
     location: 'Remote',
     type: 'Fellowship',
     description: 'Building backend functionality for Python and SQLite applications in a five-person team through Git-based collaboration.',
@@ -53,7 +53,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Summer Teaching Assistant',
     company: 'Quakerbridge Learning Center',
-    period: '05/2026 – Aug 2026',
+    period: 'MAY 2026 – AUG 2026',
     location: 'Mercerville, NJ',
     type: 'Education',
     description: 'Taught core Java, Object-Oriented Programming (OOP), and basic Data Structures and Algorithms (DSA) to a summer cohort of 45+ students, leading to a 90%+ pass rate on the WWP Computer Programming district exam.',
@@ -68,7 +68,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'AI Fellow',
     company: 'Handshake AI',
-    period: '12/2025 – Present',
+    period: 'DEC 2025 – Present',
     location: 'Remote',
     type: 'Fellowship',
     description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
@@ -78,7 +78,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Laboratory Technician',
     company: 'SGS EHS',
-    period: '10/2025 – 06/2026',
+    period: 'OCT 2025 – JUN 2026',
     location: 'Dayton, NJ',
     type: 'Lab',
     description: 'Prepared sample batches for chemical analysis through preservation, spiking, reagent addition, digestion, and filtration, then documented sample preparation using Microsoft Excel scripts, LIMS (Laboratory Information Management Systems), and Clinisys software.',
