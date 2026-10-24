@@ -207,7 +207,7 @@ export default function Experience() {
         </div>
 
         {EXPERIENCES.length > 2 && (
-          <button type="button" onClick={() => setShowAll((current) => !current)} className="mt-8 mx-auto flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-cyan transition-colors">
+          <button type="button" onClick={() => setShowAll((current) => !current)} className="mt-8 mx-auto flex items-center gap-2 text-sm font-mono text-foreground hover:text-cyan transition-colors">
             {showAll ? 'Show less' : 'Show more'}
             <span aria-hidden="true" className={`transition-transform ${showAll ? 'rotate-180' : ''}`}>⌄</span>
           </button>
