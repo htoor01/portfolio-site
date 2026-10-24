@@ -80,7 +80,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-balance text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6 whitespace-nowrap"
         >
-          <span className="text-cyan">Backend SWE</span>
+          <span className="text-cyan">Backend Engineer</span>
         </motion.h1>
 
         {/* Terminal whoami card */}
