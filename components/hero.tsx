@@ -145,7 +145,7 @@ export default function Hero() {
           className="flex items-center justify-center mb-12"
         >
           <a
-            href="https://blobs.vusercontent.net/blob/Haaris%20Intern%202026-cmpI3Fpld5xYh9KuztaxHkoEKonLdt.pdf"
+            href="/haaris-toor-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-border text-sm font-medium text-foreground hover:border-cyan/50 hover:text-cyan transition-colors"
