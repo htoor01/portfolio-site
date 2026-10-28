@@ -68,10 +68,10 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'AI Fellow',
     company: 'Handshake AI',
-    period: 'DEC 2025 – MAY 2026',
+    period: 'DEC 2025 – Present',
     location: 'Remote',
     type: 'Fellowship',
-    description: 'Contributed primarily to Reinforcement Learning via Human Feedback (RLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
+    description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
     stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
     links: [],
   },
