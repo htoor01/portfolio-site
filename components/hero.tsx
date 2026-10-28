@@ -104,7 +104,7 @@ export default function Hero() {
               </div>
               <div className="mb-3">
                 <span className="text-muted-foreground">→ </span>
-                <span className="text-foreground">CS Student at Rutgers, previous Founding Engineer at Lotari, current Open Source Developer at Public Invention &amp; Backend Fellow at Blueprint (Rutgers)</span>
+                <span className="text-foreground">CS Student at Rutgers, previous Founding Software Engineer at Lotari, current Software Engineer Intern at Public Invention &amp; Backend Software Engineer Fellow at Rutgers Blueprint</span>
               </div>
               <div className="border-t border-border pt-3">
                 <span className="text-muted-foreground">→ </span>
@@ -145,7 +145,7 @@ export default function Hero() {
           className="flex items-center justify-center mb-12"
         >
           <a
-            href="https://blobs.vusercontent.net/blob/Haaris%20Intern%202026-cmpI3Fpld5xYh9KuztaxHkoEKonLdt.pdf"
+            href="https://blobs.vusercontent.net/blob/Haaris%20Toor%20Intern%20Resume-Lt8rapDUM6CDLGUwbUt2WJ2263Ff57.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-border text-sm font-medium text-foreground hover:border-cyan/50 hover:text-cyan transition-colors"

@@ -17,7 +17,7 @@ type Experience = {
 
 const EXPERIENCES: Experience[] = [
   {
-    role: 'Founding Engineer',
+    role: 'Founding Software Engineer',
     company: 'Lotari',
     period: 'NOV 2025 – JUN 2026',
     location: 'Remote',
@@ -29,35 +29,35 @@ const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    role: 'Open Source Developer',
+    role: 'Software Engineer Intern',
     company: 'Public Invention',
-    period: 'SEP 2026 – Present',
+    period: 'OCT 2026 – Present',
     location: 'Remote',
-    type: 'Open Source',
-    description: 'Defining a standardized JSON output schema with the ML team, writing pytest contract tests in GitHub Actions, restructuring the Flask backend, and improving contributor documentation for the AWS-hosted Librecorder platform.',
+    type: 'Internship',
+    description: 'Blocked failing pushes with GitHub Actions CI running 30 pytest tests across 16 Flask routes and ML classifier schemas, reduced setup from 144 packages to five dependencies, and split a 478-line Flask monolith into six modules.',
     stack: ['Python', 'Flask', 'pytest', 'GitHub Actions', 'AWS', 'Git'],
     links: [
       { label: 'Public Invention', href: 'https://github.com/pubinv' },
     ],
   },
   {
-    role: 'Backend Engineer Fellow',
-    company: 'Blueprint Rutgers',
-    period: 'SEP 2026 – Present',
-    location: 'Remote',
+    role: 'Backend Software Engineer Fellow',
+    company: 'Rutgers Blueprint',
+    period: 'SEP 2026 – DEC 2026',
+    location: 'New Brunswick, NJ',
     type: 'Fellowship',
-    description: 'Building backend functionality for Python and SQLite applications in a five-person team through Git-based collaboration.',
+    description: 'Building Python and SQLite CRUD applications and socket-based client/server login systems as part of a five-person team.',
     stack: ['Python', 'SQLite', 'Git'],
     links: [],
   },
   {
-    role: 'Summer Teaching Assistant',
+    role: 'Software Engineer (previously Java Tutor)',
     company: 'Quakerbridge Learning Center',
-    period: 'MAY 2026 – AUG 2026',
+    period: 'MAY 2026 – Present',
     location: 'Mercerville, NJ',
-    type: 'Education',
-    description: 'Taught core Java, Object-Oriented Programming (OOP), and basic Data Structures and Algorithms (DSA) to a summer cohort of 45+ students, leading to a 90%+ pass rate on the WWP Computer Programming district exam.',
-    stack: ['Java', 'OOP', 'Data Structures', 'Algorithms', 'AP CS A'],
+    type: 'Software Engineering',
+    description: 'Automated a grading bottleneck identified while tutoring by building and maintaining a Spring Boot autograder used across three classes (about 90 students), cutting grading time from roughly 3–6 hours to 20–30 minutes.',
+    stack: ['Java', 'Spring Boot', 'JUnit', 'Docker', 'GitHub Actions', 'Google Classroom API'],
     links: [
       {
         label: 'YouTube Lectures',
@@ -112,11 +112,11 @@ function FadeIn({
 export default function Experience() {
   const [showAll, setShowAll] = useState(false)
   const orderedExperiences = [
-    'Open Source Developer',
-    'Founding Engineer',
+    'Software Engineer Intern',
+    'Founding Software Engineer',
     'AI Fellow',
-    'Backend Engineer Fellow',
-    'Summer Teaching Assistant',
+    'Backend Software Engineer Fellow',
+    'Software Engineer (previously Java Tutor)',
     'Laboratory Technician',
   ].map((role) => EXPERIENCES.find((experience) => experience.role === role)!).filter(Boolean)
   const visibleExperiences = showAll ? orderedExperiences : orderedExperiences.slice(0, 2)
