@@ -29,7 +29,7 @@ export default function Education() {
           <div className="p-6 rounded-lg border border-border bg-card flex items-center justify-between gap-8">
             <div className="min-w-0">
               <h3 className="text-base font-semibold text-foreground">Rutgers University, New Brunswick</h3>
-              <p className="text-sm text-muted-foreground mt-0.5">Expected JAN 2028 · B.S. in Computer Science · Minor in Economics</p>
+              <p className="text-sm text-muted-foreground mt-0.5">B.S. in Computer Science · Minor in Economics</p>
               <div className="mt-6">
                 <p className="text-xs font-mono text-cyan uppercase tracking-wider mb-2">Activities</p>
                 <div className="flex flex-wrap gap-2">
