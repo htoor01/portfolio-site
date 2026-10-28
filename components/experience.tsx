@@ -68,7 +68,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'AI Fellow',
     company: 'Handshake AI',
-    period: 'DEC 2025 – Present',
+    period: 'DEC 2025 – MAY 2026',
     location: 'Remote',
     type: 'Fellowship',
     description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
@@ -114,9 +114,9 @@ export default function Experience() {
   const orderedExperiences = [
     'Software Engineer Intern',
     'Founding Software Engineer',
-    'AI Fellow',
     'Backend Software Engineer Fellow',
     'Software Engineer (previously Java Tutor)',
+    'AI Fellow',
     'Laboratory Technician',
   ].map((role) => EXPERIENCES.find((experience) => experience.role === role)!).filter(Boolean)
   const visibleExperiences = showAll ? orderedExperiences : orderedExperiences.slice(0, 2)
