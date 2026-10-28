@@ -11,7 +11,7 @@ const PROJECTS = [
     challenge:
       'Containerizing JUnit execution and building CI checks that keep grading safe, repeatable, and reliable across every commit.',
     stack: ['Python', 'Google Classroom API', 'JUnit', 'Docker', 'GitHub Actions', 'Codex'],
-    period: '2026',
+    period: 'AUG 2026 – Present',
     github: 'https://github.com/htoor01/AutoTA',
     featured: true,
     highlight: '200+ submissions · Dockerized tests · Automated CI/CD',
@@ -23,7 +23,7 @@ const PROJECTS = [
     challenge:
       'Grounding AI guidance in live app data while combining seven river gauges, rainfall, mapping, routing, accessibility features, and emergency response workflows into one reliable system.',
     stack: ['TypeScript', 'Vite', 'MapLibre GL', 'Node.js', 'Python', 'scikit-learn', 'Gemini', 'ElevenLabs', 'ESP32'],
-    period: 'HackRU 2026',
+    period: 'OCT 2026',
     github: 'https://github.com/hassan1brahim/RUAfloat',
     devpost: 'https://devpost.com/software/ru-afloat',
     featured: true,
@@ -36,7 +36,7 @@ const PROJECTS = [
     challenge:
       'Significant class imbalance in the SCIN dataset required careful augmentation and stratified splits. Calibrating the AI chat to be medically responsible without being overly restrictive was a real balancing act.',
     stack: ['Python', 'Flask', 'PyTorch', 'ONNX', 'EfficientNet-B0', 'React', 'Vite', 'Tailwind', 'JWT', 'DeepSeek'],
-    period: 'MTC Hackathon',
+    period: 'APR 2026',
     github: 'https://github.com/hassan1brahim/MTC-Hackathon',
     devpost: 'https://devpost.com/software/dermai-fsxq17',
     featured: true,
