@@ -9,7 +9,7 @@ type Experience = {
   company: string
   period: string
   location: string
-  type: string
+  type: string | string[]
   description: string
   stack: string[]
   links: { label: string; href: string }[]
@@ -21,21 +21,21 @@ const EXPERIENCES: Experience[] = [
     company: 'Lotari',
     period: 'NOV 2025 – JUN 2026',
     location: 'Remote',
-    type: 'Startup',
-    description: 'Built and maintained backend services for three legal-tech products using Python and REST APIs, automated testing and deployment with GitHub Actions and AWS, owned a product end-to-end from PRD to deployment, and reduced monthly infrastructure costs by 10%.',
-    stack: ['TypeScript', 'AWS Lambda', 'AWS S3', 'AWS IAM', 'Textract', 'CDK', 'GitHub Actions'],
+    type: ['Startup', 'Engineering'],
+    description: 'Built Lotari’s AI intake and routing service solo from spec to MVP on AWS, and helped the small engineering team consolidate its apps into a monorepo with automated CI/CD.',
+    stack: ['Python', 'FastAPI', 'TypeScript', 'React', 'AWS', 'GitHub Actions'],
     links: [
       { label: 'Lotari', href: 'https://www.lotari.ai' },
     ],
   },
   {
-    role: 'Software Engineer Intern',
+    role: 'Software Engineer',
     company: 'Public Invention',
     period: 'OCT 2026 – Present',
     location: 'Remote',
-    type: 'Internship',
-    description: 'Blocked failing pushes with GitHub Actions CI running 30 pytest tests across 16 Flask routes and ML classifier schemas, reduced setup from 144 packages to five dependencies, and split a 478-line Flask monolith into six modules.',
-    stack: ['Python', 'Flask', 'pytest', 'GitHub Actions', 'AWS', 'Git'],
+    type: ['Open Source', 'Engineering'],
+    description: 'Contributed to Librecorder, an open-source AI diagnostic platform, by blocking failing pushes with GitHub Actions CI running 30 pytest tests across 16 Flask routes and ML classifier schemas, reducing setup to five core dependencies, and splitting a 478-line Flask monolith into six modules.',
+    stack: ['Python', 'Flask', 'pytest', 'GitHub Actions'],
     links: [
       { label: 'Public Invention', href: 'https://github.com/pubinv' },
     ],
@@ -43,7 +43,7 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'Backend Software Engineer Fellow',
     company: 'Rutgers Blueprint',
-    period: 'SEP 2026 – DEC 2026',
+    period: 'SEP 2026 – Present',
     location: 'New Brunswick, NJ',
     type: 'Fellowship',
     description: 'Building Python and SQLite CRUD applications and socket-based client/server login systems as part of a five-person team.',
@@ -51,12 +51,12 @@ const EXPERIENCES: Experience[] = [
     links: [],
   },
   {
-    role: 'Software Engineer (previously Java Tutor)',
+    role: 'Java Tutor & Developer',
     company: 'Quakerbridge Learning Center',
     period: 'MAY 2026 – Present',
     location: 'Mercerville, NJ',
-    type: 'Software Engineering',
-    description: 'Automated a grading bottleneck identified while tutoring by building and maintaining a Spring Boot autograder used across three classes (about 90 students), cutting grading time from roughly 3–6 hours to 20–30 minutes.',
+    type: ['Tutoring', 'Engineering'],
+    description: 'Built and maintained a Spring Boot autograder used across three classes (about 90 students), reducing grading time from 3–6 hours to 20–30 minutes; taught Java, OOP, and DSA to a 45-student summer cohort, with a 91% pass rate on the district exam.',
     stack: ['Java', 'Spring Boot', 'JUnit', 'Docker', 'GitHub Actions', 'Google Classroom API'],
     links: [
       {
@@ -66,11 +66,11 @@ const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    role: 'AI Fellow',
+    role: 'AI Fellow (Contract)',
     company: 'Handshake AI',
     period: 'DEC 2025 – MAY 2026',
     location: 'Remote',
-    type: 'Fellowship',
+    type: 'Contract',
     description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
     stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
     links: [],
@@ -112,11 +112,11 @@ function FadeIn({
 export default function Experience() {
   const [showAll, setShowAll] = useState(false)
   const orderedExperiences = [
-    'Software Engineer Intern',
+    'Software Engineer',
     'Founding Software Engineer',
     'Backend Software Engineer Fellow',
-    'Software Engineer (previously Java Tutor)',
-    'AI Fellow',
+    'Java Tutor & Developer',
+    'AI Fellow (Contract)',
     'Laboratory Technician',
   ].map((role) => EXPERIENCES.find((experience) => experience.role === role)!).filter(Boolean)
   const visibleExperiences = showAll ? orderedExperiences : orderedExperiences.slice(0, 2)
@@ -161,9 +161,13 @@ export default function Experience() {
                       </div>
                       <div className="flex flex-col items-end gap-1.5">
                         <span className="font-mono text-xs text-muted-foreground">{exp.period}</span>
-                        <span className="px-2 py-0.5 rounded-full border border-border text-xs font-mono text-muted-foreground">
-                          {exp.type}
-                        </span>
+                        <div className="flex flex-wrap justify-end gap-1.5">
+                          {(Array.isArray(exp.type) ? exp.type : [exp.type]).map((type) => (
+                            <span key={type} className="px-2 py-0.5 rounded-full border border-border text-xs font-mono text-muted-foreground">
+                              {type}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
 
@@ -188,15 +192,18 @@ export default function Experience() {
                       {exp.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-1.5">
-                      {exp.stack.map((s) => (
-                        <span
-                          key={s}
-                          className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground"
-                        >
-                          {s}
-                        </span>
-                      ))}
+                    <div>
+                      <p className="mb-2 font-mono text-xs text-muted-foreground">Technologies:</p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {exp.stack.map((s) => (
+                          <span
+                            key={s}
+                            className="px-2 py-0.5 rounded text-xs font-mono bg-secondary text-muted-foreground"
+                          >
+                            {s}
+                          </span>
+                        ))}
+                      </div>
                     </div>
 
                   </div>
