@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 // useState is still used inside TypingEffect
 import { motion } from 'framer-motion'
-import { ArrowDown, FileText } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 import Image from 'next/image'
 
 
@@ -136,25 +136,6 @@ export default function Hero() {
         >
           <TypingEffect />
         </motion.p>
-
-        {/* CTA buttons — centered */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col items-center justify-center mb-12"
-        >
-          <a
-            href="https://blobs.vusercontent.net/blob/Haaris%20Toor%20Newgrad%20Resume-2yF0tmI09PeFfsxeiWYl2qWGI6gelW.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md border border-border text-sm font-medium text-foreground hover:border-cyan/50 hover:text-cyan transition-colors"
-          >
-            <FileText size={14} />
-            Resume
-          </a>
-          <p className="mt-2 text-xs italic text-muted-foreground">Last updated NOV 2026</p>
-        </motion.div>
 
         {/* Scroll hint */}
         <motion.button
