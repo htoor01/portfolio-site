@@ -35,7 +35,7 @@ export default function Education() {
                       <ChevronDown size={12} aria-hidden="true" className="transition-transform group-open:rotate-180" />
                     </summary>
                     <div className="mt-2 max-w-2xl rounded border border-border bg-background p-4 text-xs leading-relaxed text-muted-foreground">
-                      <p><span className="font-medium text-foreground">Hackathons:</span> Participated in the first-ever MTC hackathon in Spring 2026 and again in Fall 2026.</p>
+                      <p><span className="font-medium text-foreground">Hackathons:</span> Participated in the first two MTC hackathons of the Rutgers (New Brunswick) chapter.</p>
                       <p className="mt-2"><span className="font-medium text-foreground">Community:</span> Connected with the larger MTC community across the USA.</p>
                     </div>
                   </details>

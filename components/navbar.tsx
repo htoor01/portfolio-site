@@ -16,7 +16,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [isLight, setIsLight] = useState(true)
+  const [isLight, setIsLight] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -53,26 +53,31 @@ export default function Navbar() {
       >
         <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo + theme toggle */}
-          <div className="flex items-center gap-3">
-            <a
-              href="#"
-              className="font-mono text-sm font-medium text-foreground hover:text-cyan transition-colors"
-              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
-            >
-              <span className="text-cyan">~/</span>haaris
-            </a>
-            <button
-              onClick={() => setIsLight((v) => !v)}
-              className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-mono transition-colors ${
-                isLight
-                  ? 'border-cyan/60 text-cyan bg-cyan/10 hover:bg-cyan/20'
-                  : 'border-border text-muted-foreground hover:border-cyan/40 hover:text-foreground'
-              }`}
-              aria-label="Toggle light mode"
-            >
-              {isLight ? <Moon size={12} /> : <Sun size={12} />}
-              {isLight ? 'dark' : 'light'}
-            </button>
+          <div className="flex flex-col items-start gap-2">
+            <div className="flex items-center gap-3">
+              <a
+                href="#"
+                className="font-mono text-sm font-medium text-foreground hover:text-cyan transition-colors"
+                onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
+              >
+                <span className="text-cyan">~/</span>haaris
+              </a>
+              <button
+                onClick={() => setIsLight((v) => !v)}
+                className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-mono transition-colors ${
+                  isLight
+                    ? 'border-cyan/60 text-cyan bg-cyan/10 hover:bg-cyan/20'
+                    : 'border-border text-muted-foreground hover:border-cyan/40 hover:text-foreground'
+                }`}
+                aria-label="Toggle light mode"
+              >
+                {isLight ? <Moon size={12} /> : <Sun size={12} />}
+                {isLight ? 'dark' : 'light'}
+              </button>
+            </div>
+            <span className="font-mono text-[10px] leading-none text-muted-foreground">
+              Last updated Nov 2026
+            </span>
           </div>
 
           {/* Desktop nav */}
