@@ -22,22 +22,23 @@ const EXPERIENCES: Experience[] = [
     period: 'NOV 2025 – JUN 2026',
     location: 'Remote',
     type: ['Startup', 'Engineering'],
-    description: 'Built Lotari’s AI intake and routing service solo from spec to MVP on AWS, and helped the small engineering team consolidate its apps into a monorepo with automated CI/CD.',
+    description: 'At Lotari, an early-stage legal-tech startup that passed a SOC 2 Type I audit, I built a product solo from PRD to MVP: a FastAPI/React service on AWS that triages legal requests with an explainable, admin-configurable rules engine. I also traced a product’s silent document-extraction failures to a missing IAM permission and moved its deploys to GitHub Actions.',
     stack: ['Python', 'FastAPI', 'TypeScript', 'React', 'AWS', 'GitHub Actions'],
     links: [
       { label: 'Lotari', href: 'https://www.lotari.ai' },
     ],
   },
   {
-    role: 'Software Engineer',
+    role: 'Backend Software Engineer',
     company: 'Public Invention',
     period: 'OCT 2026 – Present',
     location: 'Remote',
     type: ['Open Source', 'Engineering'],
-    description: 'Contributed to Librecorder, an open-source AI diagnostic platform, by blocking failing pushes with GitHub Actions CI running 30 pytest tests across 16 Flask routes and ML classifier schemas, reducing setup to five core dependencies, and splitting a 478-line Flask monolith into six modules.',
-    stack: ['Python', 'Flask', 'pytest', 'GitHub Actions'],
+    description: 'I’m a backend and AWS engineer on Librecorder, an open-source medical screening platform built by a volunteer team in weekly Agile sprints. I recovered unversioned production code from a live EC2 server into GitHub, cut the dev environment from 144 packages to 5, and I’m now building CI and refactoring the Flask backend.',
+    stack: ['Python', 'Flask', 'pytest', 'GitHub Actions', 'AWS'],
     links: [
-      { label: 'Public Invention', href: 'https://github.com/pubinv' },
+      { label: 'Project Page', href: 'https://pubinv.org/project/librecorder-project' },
+      { label: 'Repo', href: 'https://github.com/pubinv' },
     ],
   },
   {
@@ -51,12 +52,12 @@ const EXPERIENCES: Experience[] = [
     links: [],
   },
   {
-    role: 'Java Tutor & Developer',
+    role: 'Java Developer & Tutor',
     company: 'Quakerbridge Learning Center',
-    period: 'MAY 2026 – Present',
+    period: 'MAY 2026 – NOV 2026',
     location: 'Mercerville, NJ',
     type: ['Tutoring', 'Engineering'],
-    description: 'Built and maintained a Spring Boot autograder used across three classes (about 90 students), reducing grading time from 3–6 hours to 20–30 minutes; taught Java, OOP, and DSA to a 45-student summer cohort, with a 91% pass rate on the district exam.',
+    description: 'I co-taught Java, OOP and DSA to a 45-student cohort, which reached a 91% pass rate on the district exam. To fix the grading bottleneck, I built AutoTA, an open-source autograder that tests each submission in a locked-down Docker container and cut grading from 3–6 hours to 20–30 minutes across 3 classes.',
     stack: ['Java', 'Spring Boot', 'JUnit', 'Docker', 'GitHub Actions', 'Google Classroom API'],
     links: [
       {
@@ -68,10 +69,10 @@ const EXPERIENCES: Experience[] = [
   {
     role: 'AI Fellow (Contract)',
     company: 'Handshake AI',
-    period: 'DEC 2025 – MAY 2026',
+    period: 'JAN 2026 – MAY 2026',
     location: 'Remote',
     type: 'Contract',
-    description: 'Contributed primarily to Natural Language Human Feedback (NLHF) workflows by evaluating model responses, identifying quality gaps, and producing structured feedback for AI system improvement under strict quality and confidentiality requirements.',
+    description: 'I created training and evaluation data for multimodal AI models, judging AI-generated images and writing adversarial prompts to produce preference data. I also annotated videos with timestamped captions and wrote Q&A pairs that test visual reasoning.',
     stack: ['Multimodal AI', 'Prompt Engineering', 'Computer Vision', 'Data Labeling', 'Evaluation Pipelines'],
     links: [],
   },
@@ -112,10 +113,10 @@ function FadeIn({
 export default function Experience() {
   const [showAll, setShowAll] = useState(false)
   const orderedExperiences = [
-    'Software Engineer',
+    'Backend Software Engineer',
     'Founding Software Engineer',
     'Backend Software Engineer Fellow',
-    'Java Tutor & Developer',
+    'Java Developer & Tutor',
     'AI Fellow (Contract)',
     'Laboratory Technician',
   ].map((role) => EXPERIENCES.find((experience) => experience.role === role)!).filter(Boolean)
