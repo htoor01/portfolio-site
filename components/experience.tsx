@@ -42,16 +42,6 @@ const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    role: 'Backend Software Engineer Fellow',
-    company: 'Rutgers Blueprint',
-    period: 'SEP 2026 – Present',
-    location: 'New Brunswick, NJ',
-    type: 'Fellowship',
-    description: 'Building Python and SQLite CRUD applications and socket-based client/server login systems as part of a five-person team.',
-    stack: ['Python', 'SQLite', 'Git'],
-    links: [],
-  },
-  {
     role: 'Java Developer & Tutor',
     company: 'Quakerbridge Learning Center',
     period: 'MAY 2026 – NOV 2026',
@@ -115,7 +105,6 @@ export default function Experience() {
   const orderedExperiences = [
     'Backend Software Engineer',
     'Founding Software Engineer',
-    'Backend Software Engineer Fellow',
     'Java Developer & Tutor',
     'AI Fellow (Contract)',
     'Laboratory Technician',
