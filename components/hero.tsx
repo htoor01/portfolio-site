@@ -142,7 +142,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.6 }}
-          onClick={() => handleScroll('#about')}
+          onClick={() => handleScroll('#experience')}
           className="text-muted-foreground hover:text-foreground transition-colors animate-bounce"
           aria-label="Scroll down"
         >

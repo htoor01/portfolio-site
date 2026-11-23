@@ -18,6 +18,12 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isLight, setIsLight] = useState(false)
 
+  // Always start at the top on load/refresh instead of restoring the previous scroll position
+  useEffect(() => {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [])
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll)
