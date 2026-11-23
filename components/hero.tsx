@@ -104,7 +104,7 @@ export default function Hero() {
               </div>
               <div className="mb-3">
                 <span className="text-muted-foreground">→ </span>
-                <span className="text-foreground">CS Student at Rutgers, previous Founding Software Engineer at Lotari, current Software Engineer at Public Invention &amp; Backend Software Engineer Fellow at Rutgers Blueprint</span>
+                <span className="text-foreground">CS Student at Rutgers, previous Founding Software Engineer at Lotari, current Backend Software Engineer at Public Invention &amp; Backend Software Engineer Fellow at Rutgers Blueprint</span>
               </div>
               <div className="border-t border-border pt-3">
                 <span className="text-muted-foreground">→ </span>
