@@ -49,17 +49,17 @@ export default function Contact() {
 
         <FadeIn delay={0.25}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
-            <a href="mailto:haaristoor1@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-cyan transition-colors group">
+            <a href="mailto:haaristoor1@gmail.com" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group">
               <Mail size={16} />
               <span className="font-mono">haaristoor1@gmail.com</span>
               <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
-            <a href="https://linkedin.com/in/haaristoor" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-cyan transition-colors group">
+            <a href="https://linkedin.com/in/haaristoor" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group">
               <Linkedin size={16} />
               <span className="font-mono">LinkedIn</span>
               <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
-            <a href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-cyan transition-colors group">
+            <a href="https://github.com/htoor01" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors group">
               <Github size={16} />
               <span className="font-mono">GitHub</span>
               <ArrowUpRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
