@@ -38,7 +38,7 @@ const EXPERIENCES: Experience[] = [
     stack: ['Python', 'Flask', 'pytest', 'GitHub Actions', 'AWS'],
     links: [
       { label: 'Project Page', href: 'https://pubinv.org/project/librecorder-project' },
-      { label: 'Repo', href: 'https://github.com/pubinv' },
+      { label: 'Repo', href: 'https://github.com/PubInv/librecorder' },
     ],
   },
   {
