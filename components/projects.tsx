@@ -12,7 +12,7 @@ const PROJECTS = [
       'Containerizing JUnit execution and building CI checks that keep grading safe, repeatable, and reliable across every commit.',
     stack: ['Python', 'Google Classroom API', 'JUnit', 'Docker', 'GitHub Actions', 'Codex'],
     period: 'AUG 2026 – Present',
-    github: 'https://github.com/htoor01/AutoTA',
+    github: 'https://github.com/htoor01/auto-ta',
     featured: true,
     highlight: '200+ submissions · Dockerized tests · Automated CI/CD',
   },

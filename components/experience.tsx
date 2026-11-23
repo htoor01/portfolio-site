@@ -54,6 +54,7 @@ const EXPERIENCES: Experience[] = [
         label: 'YouTube Lectures',
         href: 'https://youtube.com/playlist?list=PLgCHRLIJOoVP-1b6pCCB1T3BPJgvVKglc&si=W5ZZiiYg2XSJhXRZ',
       },
+      { label: 'AutoTA repo', href: 'https://github.com/htoor01/auto-ta' },
     ],
   },
   {

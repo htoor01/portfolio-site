@@ -37,6 +37,7 @@ export default function Education() {
                     <div className="mt-2 max-w-2xl rounded border border-border bg-background p-4 text-xs leading-relaxed text-muted-foreground">
                       <p><span className="font-medium text-foreground">Hackathons:</span> Participated in the first two MTC hackathons of the Rutgers (New Brunswick) chapter.</p>
                       <p className="mt-2"><span className="font-medium text-foreground">Community:</span> Connected with the larger MTC community across the USA.</p>
+                      <p className="mt-2 flex flex-wrap gap-x-4 gap-y-2"><a href="https://mtcrutgers.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-cyan"><ExternalLink size={12} aria-hidden="true" />MTC Rutgers official page</a><a href="https://www.linkedin.com/company/muslimtechcollab/home" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-cyan"><ExternalLink size={12} aria-hidden="true" />MTC national LinkedIn</a></p>
                     </div>
                   </details>
                   {activities.map((activity) => (
@@ -54,6 +55,7 @@ export default function Education() {
                     <div className="mt-2 max-w-2xl rounded border border-border bg-background p-4 text-xs leading-relaxed text-muted-foreground">
                       <p><span className="font-medium text-foreground">Curriculum:</span> Python, SQL, FastAPI, Postman, Git, HTTP, and Client-Server models.</p>
                       <p className="mt-2"><span className="font-medium text-foreground">Capstone:</span> Built a CRUD project (a Chatroom) with a team of 5.</p>
+                      <p className="mt-2"><a href="https://rutgersblueprint.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-cyan"><ExternalLink size={12} aria-hidden="true" />Blueprint official page</a></p>
                     </div>
                   </details>
                   <details className="group w-full">
